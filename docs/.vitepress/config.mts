@@ -21,7 +21,7 @@ export default defineConfig({
     },
     transformHead({ assets }) {
         // adjust the regex accordingly to match your font
-        const myFontFile = assets.find((file) => /Mojangles\.\w+\.ttf/);
+        const myFontFile = assets.find((file) => /Mojangles\.\w+\.woff2/);
         if (myFontFile) {
             return [
                 [
@@ -30,7 +30,7 @@ export default defineConfig({
                         rel: 'preload',
                         href: myFontFile,
                         as: 'font',
-                        type: 'font/ttf',
+                        type: 'font/woff2',
                         crossorigin: ''
                     }
                 ]
