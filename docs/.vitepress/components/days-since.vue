@@ -69,6 +69,6 @@
 <style>
     @font-face {
         font-family: 'Mojangles';
-        src: url('/docs/.vitepress/assets/Mojangles.ttf');
+        src: url('@/assets/Mojangles.ttf');
     }
 </style>

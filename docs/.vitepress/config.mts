@@ -18,5 +18,23 @@ export default defineConfig({
         ssr: {
             noExternal: ['vuetify']
         }
+    },
+    transformHead({ assets }) {
+        // adjust the regex accordingly to match your font
+        const myFontFile = assets.find((file) => /Mojangles\.\w+\.ttf/);
+        if (myFontFile) {
+            return [
+                [
+                    'link',
+                    {
+                        rel: 'preload',
+                        href: myFontFile,
+                        as: 'font',
+                        type: 'font/ttf',
+                        crossorigin: ''
+                    }
+                ]
+            ];
+        }
     }
 });
