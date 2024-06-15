@@ -9,7 +9,8 @@ export default defineConfig({
         // https://vitepress.dev/reference/default-theme-config
 
         socialLinks: [
-            { icon: 'github', link: 'https://github.com/SmokeyStack' }
+            { icon: 'github', link: 'https://github.com/SmokeyStack' },
+            { icon: 'twitter', link: 'https://x.com/SmokeyStack_' }
         ]
     },
     cleanUrls: true,
