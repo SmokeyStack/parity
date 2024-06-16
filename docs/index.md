@@ -3,12 +3,12 @@ title: Features Missing From Java
 aside: false
 ---
 
-This page is to document how long since Java Edition got a feature and Bedrock Edition is still waiting for.
+This page is to document how long since Java Edition got a feature and Bedrock Edition is still waiting for. Select the buttons below to filter each parity category:
 
 <v-chip-group v-model="filters" column multiple>
-    <v-chip text="Add-Ons" variant="outlined" filter></v-chip>
-    <v-chip text="Commands" variant="outlined" filter></v-chip>
-    <v-chip text="General" variant="outlined" filter></v-chip>
+    <v-chip text="Add-Ons (13)" variant="outlined" filter></v-chip>
+    <v-chip text="Commands (3)" variant="outlined" filter></v-chip>
+    <v-chip text="General (1)" variant="outlined" filter></v-chip>
 </v-chip-group>
 
 <span v-if="filters.some((value) => ['General'].includes(getTagName(value)))">
@@ -147,7 +147,7 @@ This page is to document how long since Java Edition got a feature and Bedrock E
 <script>
     export default {
         data: () => ({
-            filters: [0,1,2,3,4,5]
+            filters: []
         })
     };
 </script>
