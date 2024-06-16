@@ -69,6 +69,6 @@
 <style>
     @font-face {
         font-family: 'Mojangles';
-        src: url('/Mojangles.ttf') format('ttf');
+        src: url('/Mojangles.ttf') format('truetype');
     }
 </style>
