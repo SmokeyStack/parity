@@ -21,11 +21,7 @@ export default defineConfig({
     },
     transformHead({ assets }) {
         // adjust the regex accordingly to match your font
-        console.log(assets);
         const myFontFile = assets.find((file) => /Mojangles\.ttf/.test(file));
-        assets.forEach((file) => {
-            console.log('File: ' + file);
-        });
         if (myFontFile) {
             return [
                 [
