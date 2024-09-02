@@ -1,0 +1,104 @@
+[
+    {
+        "category": "general",
+        "date": "2024-05-29T10:03:00",
+        "title": "Entities With Passengers Can Use Portals",
+        "description": "since Java got the ability for entities with passengers to use portals and Bedrock has not."
+    },
+    {
+        "category": "add-ons",
+        "date": "2024-05-22T10:47:00",
+        "title": "Custom Records Playing Custom Sounds",
+        "description": "since Java's record component can play custom sounds and Bedrock cannot. It is good to note that the record component has existed in Bedrock since 1.16.100, but only limited to vanilla sounds."
+    },
+    {
+        "category": "add-ons",
+        "date": "2024-05-03",
+        "title": "Data Driven Enchantments",
+        "description": "since Java got the ability for entities with passengers to use portals and Bedrock has not."
+    },
+    {
+        "category": "add-ons",
+        "date": "2024-05-03",
+        "title": "Data Driven Painting Variants",
+        "description": "since Java got data driven painting variants and Bedrock has not."
+    },
+    {
+        "category": "add-ons",
+        "date": "2024-02-28",
+        "title": "Data Driven Vanilla Items",
+        "description": "since Java got data driven vanilla items and Bedrock has not. It is good to note that vanilla food items are data driven on Bedrock. Additionally, as of Preview 1.21.30.24, items that have a 1.16.100+ json file in the windowsapp folder are data driven as well"
+    },
+    {
+        "category": "add-ons",
+        "date": "2024-03-06",
+        "title": "Data Driven Banner Patterns",
+        "description": "since Java got data driven banner patterns and Bedrock has not."
+    },
+    {
+        "category": "commands",
+        "date": "2023-10-25",
+        "title": "<code>/tick</code>",
+        "description": "since Java got the <code>/tick</code> command and Bedrock has not."
+    },
+    {
+        "category": "add-ons",
+        "date": "2023-02-08",
+        "title": "Data Driven Damage Types",
+        "description": "since Java got data driven damage types and Bedrock has not."
+    },
+    {
+        "category": "add-ons",
+        "date": "2023-01-24",
+        "title": "Data Driven Armour Trims and Materials",
+        "description": "since Java got data driven armour trims and materials and Bedrock has not."
+    },
+    {
+        "category": "commands",
+        "date": "2023-01-18",
+        "title": "<code>/ride</code>",
+        "description": "since Java got the <code>/ride</code> command and disparity occurred. In Java, all types of entities can ride and be ridden by other entities of any types. In Bedrock, an entity cannot ride entities which are not normally rideable for it in vanilla game."
+    },
+    {
+        "category": "add-ons",
+        "date": "2022-03-16",
+        "title": "Useable Jigsaw Blocks",
+        "description": "since Java got useable Jigsaw blocks for creators and Bedrock has not."
+    },
+    {
+        "category": "commands",
+        "date": "2022-01-19",
+        "title": "<code>/placefeature</code>",
+        "description": "since Java got the <code>/placefeature</code> command and Bedrock has not. It is good to note that this command showed up in<code>1.18.20.25</code>but removed in<code>1.18.20.28</code>"
+    },
+    {
+        "category": "add-ons",
+        "date": "2020-09-21",
+        "title": "Custom Biomes",
+        "description": "since custom biome support was removed from Bedrock."
+    },
+    {
+        "category": "add-ons",
+        "date": "2020-06-03",
+        "title": "Custom Dimensions",
+        "description": "since Java got custom dimension support and Bedrock has not."
+    },
+    {
+        "category": "add-ons",
+        "date": "2018-10-24",
+        "title": "Data Driven Vanilla Block Loot Tables",
+        "description": "since Java got data driven vanilla block loot tables and Bedrock has not."
+    },
+    {
+        "category": "add-ons",
+        "date": "2017-12-06",
+        "title": "Data Driven Vanilla Tags",
+        "description": "since Java got data driven vanilla tags and Bedrock has not."
+    },
+    {
+        "category": "add-ons",
+        "date": "2014-02-06",
+        "title": "Custom Vanilla Block Models",
+        "description": "since Java got custom vanilla block models and Bedrock has not."
+    }
+]

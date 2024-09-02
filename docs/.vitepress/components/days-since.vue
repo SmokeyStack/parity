@@ -1,4 +1,5 @@
 <template>
+    <h2 v-html="title_modified"></h2>
     <h1 style="color: yellow; font-family: Mojangles">
         <template v-if="years > 0"> {{ years }} years </template>
         <template v-if="months > 0"> {{ months }} months </template>
@@ -8,6 +9,7 @@
         <template v-if="minutes > 0"> {{ minutes }} minutes </template>
         <template v-if="seconds > 0"> and {{ seconds }} seconds </template>
     </h1>
+    <span v-html="description"></span>
 </template>
 
 <script>
@@ -28,11 +30,21 @@
                     day: 1000 * 60 * 60 * 24,
                     month: 1000 * 60 * 60 * 24 * 30,
                     year: 1000 * 60 * 60 * 24 * 365
-                }
+                },
+                title_modified: `${this.title} <span class="VPBadge info">${this.category}</span>`
             };
         },
         props: {
             date: {
+                required: true
+            },
+            title: {
+                required: true
+            },
+            description: {
+                required: true
+            },
+            category: {
                 required: true
             }
         },
