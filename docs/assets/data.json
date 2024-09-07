@@ -1,6 +1,12 @@
 [
     {
         "category": "add-ons",
+        "date": "2024-09-04T10:58:00",
+        "title": "Movement Key Detection",
+        "description": "since Java got the ability to detect which movement keys the player is pressing and Bedrock has not."
+    },
+    {
+        "category": "add-ons",
         "date": "2024-08-28T09:31:00",
         "title": "Data Driven Trial Spawner Configurations",
         "description": "since Java got data driven trial spawner configurations and Bedrock has not."
@@ -27,7 +33,7 @@
         "category": "add-ons",
         "date": "2024-05-03",
         "title": "Data Driven Enchantments",
-        "description": "since Java got the ability for entities with passengers to use portals and Bedrock has not."
+        "description": "since Java got data driven enchantments and Bedrock has not."
     },
     {
         "category": "add-ons",
