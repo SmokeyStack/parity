@@ -1,6 +1,6 @@
 <template>
     <h2 v-html="title_modified"></h2>
-    <h1 style="color: yellow; font-family: Mojangles">
+    <h1 :style="{ color: textColor, fontFamily: 'Mojangles' }">
         <template v-if="years > 0"> {{ years }} years </template>
         <template v-if="months > 0"> {{ months }} months </template>
         <template v-if="days > 0"> {{ days }} days </template>
@@ -11,6 +11,18 @@
     </h1>
     <span v-html="description"></span>
 </template>
+
+<script setup>
+    import { ref, watch } from 'vue';
+    import { useData } from 'vitepress';
+
+    const isDark = useData().isDark;
+    const textColor = ref(isDark.value ? 'yellow' : 'darkblue');
+
+    watch(isDark, (newVal) => {
+        textColor.value = newVal ? 'yellow' : 'darkblue';
+    });
+</script>
 
 <script>
     export default {
