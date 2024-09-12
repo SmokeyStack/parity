@@ -1,6 +1,54 @@
 [
     {
         "category": "add-ons",
+        "date": "2024-09-11T11:21:00",
+        "title": "Item Component - <code>minecraft:death_protection</code>",
+        "description": "since Java got the <code>minecraft:death_protection</code> as an item component and Bedrock has not."
+    },
+    {
+        "category": "tags-items",
+        "date": "2024-09-11T11:21:00",
+        "title": "Vanilla Item Tag - <code>brewing_fuel</code>",
+        "description": "since Java got the <code>brewing_fuel</code> item tag and Bedrock has not."
+    },
+    {
+        "category": "tags-items",
+        "date": "2024-09-11T11:21:00",
+        "title": "Vanilla Item Tag - <code>panda_eats_from_ground</code>",
+        "description": "since Java got the <code>panda_eats_from_ground</code> item tag and Bedrock has not."
+    },
+    {
+        "category": "tags-items",
+        "date": "2024-09-11T11:21:00",
+        "title": "Vanilla Item Tag - <code>duplicates_allays</code>",
+        "description": "since Java got the <code>duplicates_allays</code> item tag and Bedrock has not."
+    },
+    {
+        "category": "add-ons",
+        "date": "2024-09-11T11:21:00",
+        "title": "Loot Tables - <code>match_tool</code> - shearing",
+        "description": "since Java got <code>shearing</code> as a <code>match_tool</code> type and Bedrock has not."
+    },
+    {
+        "category": "add-ons",
+        "date": "2024-09-11T11:21:00",
+        "title": "Loot Tables - <code>match_tool</code> - vault",
+        "description": "since Java got <code>vault</code> as a <code>match_tool</code> type and Bedrock has not."
+    },
+    {
+        "category": "add-ons",
+        "date": "2024-09-11T11:21:00",
+        "title": "Loot Tables - <code>match_tool</code> - archaeology",
+        "description": "since Java got <code>archaeology</code> as a <code>match_tool</code> type and Bedrock has not."
+    },
+    {
+        "category": "general",
+        "date": "2024-09-11T11:21:00",
+        "title": "Ender Pearl Loading Chunks",
+        "description": "since Java got ender pearls that load and tick chunks and Bedrock has not."
+    },
+    {
+        "category": "add-ons",
         "date": "2024-09-04T10:58:00",
         "title": "Movement Key Detection",
         "description": "since Java got the ability to detect which movement keys the player is pressing and Bedrock has not."
@@ -102,6 +150,12 @@
         "description": "since Java got custom dimension support and Bedrock has not."
     },
     {
+        "category": "general",
+        "date": "2019-03-27",
+        "title": "Hero of the Village - Gifts",
+        "description": "since Java got the ability for villagers to give gifts to players after a raid has been defeated and Bedrock has not."
+    },
+    {
         "category": "add-ons",
         "date": "2018-10-24",
         "title": "Data Driven Vanilla Block Loot Tables",
@@ -112,6 +166,12 @@
         "date": "2017-12-06",
         "title": "Data Driven Vanilla Tags",
         "description": "since Java got data driven vanilla tags and Bedrock has not."
+    },
+    {
+        "category": "general",
+        "date": "2015-10-22",
+        "title": "Subtitles",
+        "description": "since Java got subtitles and Bedrock has not."
     },
     {
         "category": "add-ons",

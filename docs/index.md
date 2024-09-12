@@ -9,13 +9,25 @@ This page is to document how long since Java Edition got a feature and Bedrock E
     <v-card-text>
         <v-row>
             <v-col cols="12" md="4">
-                <v-switch v-model="filters" color="primary" label="Add-Ons" value="add-ons" hide-details>></v-switch>
+                <v-switch v-model="filters" color="primary" :label="`Add-Ons (${calculateTotalEntry('add-ons')})`" value="add-ons" hide-details>></v-switch>
             </v-col>
             <v-col cols="12" md="4">
-                <v-switch v-model="filters" color="primary" label="Commands" value="commands" hide-details></v-switch>
+                <v-switch v-model="filters" color="primary" :label="`Commands (${calculateTotalEntry('commands')})`" value="commands" hide-details></v-switch>
             </v-col>
             <v-col cols="12" md="4">
-                <v-switch v-model="filters" color="primary" label="General" value="general" hide-details></v-switch>
+                <v-switch v-model="filters" color="primary" :label="`General (${calculateTotalEntry('general')})`" value="general" hide-details></v-switch>
+            </v-col>
+        </v-row>
+    </v-card-text>
+</v-card>
+
+Vanilla Tags
+
+<v-card flat color="var(--v-background)">
+    <v-card-text>
+        <v-row>
+            <v-col cols="12" md="4">
+                <v-switch v-model="filters" color="primary" :label="`Items (${calculateTotalEntry('tags-items')})`" value="tags-items" hide-details>></v-switch>
             </v-col>
         </v-row>
     </v-card-text>
@@ -36,9 +48,17 @@ This page is to document how long since Java Edition got a feature and Bedrock E
 <script>
     import data from './assets/data.json';
 
+    function calculateTotalEntry(filter){
+        let sum = 0;
+        data.forEach((parity) => {
+            if(parity.category==filter) sum++;
+        });
+        return sum;
+    }
+
     export default {
         data: () => ({
-            filters: ['add-ons', 'commands', 'general']
+            filters: ['add-ons', 'tags-items', 'commands', 'general']
         })
     };
 </script>
