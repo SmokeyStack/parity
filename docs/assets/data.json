@@ -6,24 +6,6 @@
         "description": "since Java got the <code>minecraft:death_protection</code> as an item component and Bedrock has not."
     },
     {
-        "category": "tags-items",
-        "date": "2024-09-11T11:21:00",
-        "title": "Vanilla Item Tag - <code>brewing_fuel</code>",
-        "description": "since Java got the <code>brewing_fuel</code> item tag and Bedrock has not."
-    },
-    {
-        "category": "tags-items",
-        "date": "2024-09-11T11:21:00",
-        "title": "Vanilla Item Tag - <code>panda_eats_from_ground</code>",
-        "description": "since Java got the <code>panda_eats_from_ground</code> item tag and Bedrock has not."
-    },
-    {
-        "category": "tags-items",
-        "date": "2024-09-11T11:21:00",
-        "title": "Vanilla Item Tag - <code>duplicates_allays</code>",
-        "description": "since Java got the <code>duplicates_allays</code> item tag and Bedrock has not."
-    },
-    {
         "category": "add-ons",
         "date": "2024-09-11T11:21:00",
         "title": "Loot Tables - <code>match_tool</code> - shearing",

@@ -1,0 +1,530 @@
+[
+    {
+        "date": "2024-09-11T11:21:00",
+        "title": "brewing_fuel",
+        "description": "Items that can be used as fuel in a Brewing Stand."
+    },
+    {
+        "date": "2024-09-11T11:21:00",
+        "title": "panda_eats_from_ground",
+        "description": "Items that a Panda will pick up from the ground and eat."
+    },
+    {
+        "date": "2024-09-11T11:21:00",
+        "title": "duplicates_allays",
+        "description": "Items that can be used to duplicate Allays when dancing."
+    },
+    {
+        "date": "2024-08-15T11:00:00",
+        "title": "wooden_tool_materials ",
+        "description": ""
+    },
+    {
+        "date": "2024-08-15T11:00:00",
+        "title": "netherite_tool_materials",
+        "description": ""
+    },
+    {
+        "date": "2024-08-15T11:00:00",
+        "title": "iron_tool_materials",
+        "description": ""
+    },
+    {
+        "date": "2024-08-15T11:00:00",
+        "title": "gold_tool_materials",
+        "description": ""
+    },
+    {
+        "date": "2024-08-15T11:00:00",
+        "title": "diamond_tool_materials",
+        "description": ""
+    },
+    {
+        "date": "2024-08-15T11:00:00",
+        "title": "villager_picks_up",
+        "description": ""
+    },
+    {
+        "date": "2024-08-15T11:00:00",
+        "title": "furnace_minecart_fuel",
+        "description": ""
+    },
+    {
+        "date": "2024-03-27",
+        "title": "enchantable/mace",
+        "description": ""
+    },
+    {
+        "date": "2024-03-27",
+        "title": "enchantable/sharp_weapon",
+        "description": ""
+    },
+    {
+        "date": "2024-03-27",
+        "title": "enchantable/fire_aspect",
+        "description": ""
+    },
+    {
+        "date": "2024-03-20",
+        "title": "wolf_food ",
+        "description": ""
+    },
+    {
+        "date": "2024-03-20",
+        "title": "turtle_food",
+        "description": ""
+    },
+    {
+        "date": "2024-03-20",
+        "title": "strider_tempt_items",
+        "description": ""
+    },
+    {
+        "date": "2024-03-20",
+        "title": "strider_food",
+        "description": ""
+    },
+    {
+        "date": "2024-03-20",
+        "title": "sheep_food",
+        "description": ""
+    },
+    {
+        "date": "2024-03-20",
+        "title": "rabbit_food",
+        "description": ""
+    },
+    {
+        "date": "2024-03-20",
+        "title": "pig_food",
+        "description": ""
+    },
+    {
+        "date": "2024-03-20",
+        "title": "parrot_poisonous_food",
+        "description": ""
+    },
+    {
+        "date": "2024-03-20",
+        "title": "parrot_food",
+        "description": ""
+    },
+    {
+        "date": "2024-03-20",
+        "title": "panda_food",
+        "description": ""
+    },
+    {
+        "date": "2024-03-20",
+        "title": "ocelot_food",
+        "description": ""
+    },
+    {
+        "date": "2024-03-20",
+        "title": "meat",
+        "description": ""
+    },
+    {
+        "date": "2024-03-20",
+        "title": "llama_tempt_items",
+        "description": ""
+    },
+    {
+        "date": "2024-03-20",
+        "title": "llama_food",
+        "description": ""
+    },
+    {
+        "date": "2024-03-20",
+        "title": "horse_tempt_items",
+        "description": ""
+    },
+    {
+        "date": "2024-03-20",
+        "title": "horse_food",
+        "description": ""
+    },
+    {
+        "date": "2024-03-20",
+        "title": "hoglin_food",
+        "description": ""
+    },
+    {
+        "date": "2024-03-20",
+        "title": "goat_food",
+        "description": ""
+    },
+    {
+        "date": "2024-03-20",
+        "title": "frog_food",
+        "description": ""
+    },
+    {
+        "date": "2024-03-20",
+        "title": "cow_food",
+        "description": ""
+    },
+    {
+        "date": "2024-03-20",
+        "title": "chicken_food",
+        "description": ""
+    },
+    {
+        "date": "2024-03-20",
+        "title": "cat_food",
+        "description": ""
+    },
+    {
+        "date": "2024-03-20",
+        "title": "camel_food",
+        "description": ""
+    },
+    {
+        "date": "2024-03-20",
+        "title": "bee_food",
+        "description": ""
+    },
+    {
+        "date": "2024-03-20",
+        "title": "armadillo_food",
+        "description": ""
+    },
+    {
+        "date": "2024-03-20",
+        "title": "axolotl_food",
+        "description": "Items in this tag can be used to tempt axolotls."
+    },
+    {
+        "date": "2024-01-31",
+        "title": "dyeable",
+        "description": ""
+    },
+    {
+        "date": "2024-01-17",
+        "title": "enchantable/weapon",
+        "description": ""
+    },
+    {
+        "date": "2024-01-17",
+        "title": "enchantable/vanishing",
+        "description": ""
+    },
+    {
+        "date": "2024-01-17",
+        "title": "enchantable/trident",
+        "description": ""
+    },
+    {
+        "date": "2024-01-17",
+        "title": "enchantable/mining_loot",
+        "description": ""
+    },
+    {
+        "date": "2024-01-17",
+        "title": "enchantable/mining",
+        "description": ""
+    },
+    {
+        "date": "2024-01-17",
+        "title": "enchantable/leg_armor",
+        "description": ""
+    },
+    {
+        "date": "2024-01-17",
+        "title": "enchantable/head_armor",
+        "description": ""
+    },
+    {
+        "date": "2024-01-17",
+        "title": "enchantable/foot_armor",
+        "description": ""
+    },
+    {
+        "date": "2024-01-17",
+        "title": "enchantable/fishing",
+        "description": ""
+    },
+    {
+        "date": "2024-01-17",
+        "title": "enchantable/equippable",
+        "description": ""
+    },
+    {
+        "date": "2024-01-17",
+        "title": "enchantable/durability",
+        "description": ""
+    },
+    {
+        "date": "2024-01-17",
+        "title": "enchantable/crossbow",
+        "description": ""
+    },
+    {
+        "date": "2024-01-17",
+        "title": "enchantable/chest_armor",
+        "description": ""
+    },
+    {
+        "date": "2024-01-17",
+        "title": "enchantable/bow",
+        "description": ""
+    },
+    {
+        "date": "2024-01-17",
+        "title": "enchantable/armor",
+        "description": ""
+    },
+    {
+        "date": "2024-01-17",
+        "title": "foot_armor",
+        "description": ""
+    },
+    {
+        "date": "2024-01-17",
+        "title": "chest_armor",
+        "description": ""
+    },
+    {
+        "date": "2023-04-26",
+        "title": "decorated_pot_ingredients",
+        "description": "It is good to note that in Bedrock, we have the <code>decorated_pot_sherds</code> which contains all the items in this tag."
+    },
+    {
+        "date": "2023-02-15",
+        "title": "cherry_logs",
+        "description": "Used in the <code>logs_that_burn</code> item tag."
+    },
+    {
+        "date": "2023-02-11",
+        "title": "breaks_decorated_pots",
+        "description": ""
+    },
+    {
+        "date": "2023-02-11",
+        "title": "axes",
+        "description": "Used in the <code>breaks_decorated_pots</code> item tag."
+    },
+    {
+        "date": "2022-11-23",
+        "title": "creeper_igniters",
+        "description": ""
+    },
+    {
+        "date": "2022-11-09",
+        "title": "bamboo_blocks",
+        "description": ""
+    },
+    {
+        "date": "2022-11-02",
+        "title": "fence_gates",
+        "description": ""
+    },
+    {
+        "date": "2022-10-19",
+        "title": "hanging_signs",
+        "description": "It is good to note that in Bedrock, we have the <code>hanging_sign</code> which contains all the items in this tag. The disparity is just the naming."
+    },
+    {
+        "date": "2022-04-13",
+        "title": "dampens_vibrations",
+        "description": "As thrown entities, items in this tag do not trigger vibrations."
+    },
+    {
+        "date": "2022-04-13",
+        "title": "completes_find_tree_tutorial",
+        "description": ""
+    },
+    {
+        "date": "2022-04-06",
+        "title": "compasses",
+        "description": ""
+    },
+    {
+        "date": "2022-03-24",
+        "title": "chest_boats",
+        "description": "Used in the <code>boats</code> item tag."
+    },
+    {
+        "date": "2022-11-04",
+        "title": "candles",
+        "description": [
+            "Cakes use this tag to determine if a candle item can be placed on it or not.",
+            "Adding items to this tag has no effect."
+        ]
+    },
+    {
+        "date": "2021-11-19",
+        "title": "dirt",
+        "description": ""
+    },
+    {
+        "date": "2021-03-17",
+        "title": "cluster_max_harvestables",
+        "description": "When amethyst clusters are broken with an item in this tag, they drop 4 amethyst shards."
+    },
+    {
+        "date": "2021-03-10",
+        "title": "emerald_ores",
+        "description": ""
+    },
+    {
+        "date": "2021-03-10",
+        "title": "copper_ores",
+        "description": ""
+    },
+    {
+        "date": "2021-03-10",
+        "title": "coal_ores",
+        "description": ""
+    },
+    {
+        "date": "2021-02-24",
+        "title": "redstone_ores",
+        "description": ""
+    },
+    {
+        "date": "2021-02-24",
+        "title": "lapis_ores",
+        "description": ""
+    },
+    {
+        "date": "2021-02-24",
+        "title": "iron_ores",
+        "description": ""
+    },
+    {
+        "date": "2021-02-24",
+        "title": "diamond_ores",
+        "description": ""
+    },
+    {
+        "date": "2021-02-03",
+        "title": "fox_food",
+        "description": "Foxes treat items in this tag like they do sweet berries."
+    },
+    {
+        "date": "2020-11-25",
+        "title": "freeze_immune_wearables",
+        "description": "Entities with an item in this tag in any armor slot do not freeze."
+    },
+    {
+        "date": "2020-04-15",
+        "title": "creeper_drop_music_discs",
+        "description": [
+            "Used to determine what a creeper drops when killed by a skeleton.",
+            "Used in the <code>entities/creeper.json</code> loot table.",
+            "Used in the <code>music_discs</code> item tag."
+        ]
+    },
+    {
+        "date": "2020-03-11",
+        "title": "gold_ores",
+        "description": [
+            "Used in the <code>gold_ingot.json</code> and <code>gold_ingot_from_blasting.json</code> advancement and recipe files.",
+            "Used in the <code>piglin_loved<code> item tag."
+        ]
+    },
+    {
+        "date": "2020-02-14",
+        "title": "beacon_payment_items",
+        "description": "Used by beacons to check which items can be placed inside of its GUI to select an effect."
+    },
+    {
+        "date": "2020-02-05",
+        "title": "crimson_stems",
+        "description": [
+            "Used in the <code>crimson_planks.json</code> advancement and recipe files.",
+            "Used in the <code>logs</code> item tag."
+        ]
+    },
+    {
+        "date": "2019-08-22",
+        "title": "flowers",
+        "description": [
+            "Items in this tag can be used to breed bees.",
+            "Bees follow players holding items in this tag."
+        ]
+    },
+    {
+        "date": "2019-02-27",
+        "title": "arrows",
+        "description": [
+            "Controls what items can be shot by bows and crossbows.",
+            "Any items added to the tag can be shot and picked up as a normal arrow.",
+            "It is good to note that the Bedrock has the <code>minecraft:arrow</code> tag but it only contains the <code>minecraft:arrow</code> item."
+        ]
+    },
+    {
+        "date": "2018-11-15",
+        "title": "fences",
+        "description": ""
+    },
+    {
+        "date": "2018-10-31",
+        "title": "beds",
+        "description": ""
+    },
+    {
+        "date": "2018-05-08",
+        "title": "fishes",
+        "description": [
+            "Used by dolphins to pick a player to swim to. The item can be both in the main and offhand.",
+            "Feeding a dolphin one of these items increases its 'trust' in the player.",
+            "Items in this tag add 1 to the fish_caught statistic when caught through fishing."
+        ]
+    },
+    {
+        "date": "2018-02-14",
+        "title": "birch_logs",
+        "description": ""
+    },
+    {
+        "date": "2018-02-14",
+        "title": "spruce_logs",
+        "description": ""
+    },
+    {
+        "date": "2018-02-14",
+        "title": "oak_logs",
+        "description": ""
+    },
+    {
+        "date": "2018-02-14",
+        "title": "dark_oak_logs",
+        "description": [
+            "Used in the <code>dark_oak_planks.json</code> advancement and recipe files.",
+            "Used in the <code>logs_that_burn</code> item tag."
+        ]
+    },
+    {
+        "date": "2018-02-14",
+        "title": "acacia_logs",
+        "description": [
+            "Used in the <code>acacia_planks.json</code> advancement and recipe files.",
+            "Used in the <code>logs_that_burn</code> item tag."
+        ]
+    },
+    {
+        "date": "2018-02-09",
+        "title": "banners",
+        "description": [
+            "Used to check if an item can go in the fuel slot of a furnace and to return a burn time of 300.",
+            "It is good to note that the Bedrock has the <code>minecraft:banner</code> tag but it only contains the <code>minecraft:banner</code> item."
+        ]
+    },
+    {
+        "date": "2018-01-14",
+        "title": "anvil",
+        "description": ""
+    },
+    {
+        "date": "2017-12-07",
+        "title": "doors",
+        "description": "It is good to note that in Bedrock, we have the <code>door</code> which contains all the items in this tag. The disparity is just the naming."
+    },
+    {
+        "date": "2017-12-07",
+        "title": "buttons",
+        "description": ""
+    }
+]

@@ -8,6 +8,7 @@ import * as directives from 'vuetify/directives';
 import { aliases, mdi } from 'vuetify/iconsets/mdi-svg';
 
 import smokeystackDaysSince from '../components/days-since.vue';
+import smokeystackDaysSinceTags from '../components/days-since-tags.vue';
 
 const vuetify = createVuetify({
     components,
@@ -26,5 +27,6 @@ export default {
     enhanceApp({ app }) {
         app.use(vuetify);
         app.component('smokeystackDaysSince', smokeystackDaysSince);
+        app.component('smokeystackDaysSinceTags', smokeystackDaysSinceTags);
     }
 } satisfies Theme;

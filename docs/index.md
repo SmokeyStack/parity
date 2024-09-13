@@ -21,18 +21,6 @@ This page is to document how long since Java Edition got a feature and Bedrock E
     </v-card-text>
 </v-card>
 
-Vanilla Tags
-
-<v-card flat color="var(--v-background)">
-    <v-card-text>
-        <v-row>
-            <v-col cols="12" md="4">
-                <v-switch v-model="filters" color="primary" :label="`Items (${calculateTotalEntry('tags-items')})`" value="tags-items" hide-details>></v-switch>
-            </v-col>
-        </v-row>
-    </v-card-text>
-</v-card>
-
 <span v-for="i in data.length">
     <span v-if="filters.some((value) => [data[i-1].category].includes(value))">
         <smokeystackDaysSince :date="new Date(data[i-1].date)" :title="data[i-1].title" :description="data[i-1].description" :category="capitalizeFirstLetter(data[i-1].category)" />
@@ -58,7 +46,7 @@ Vanilla Tags
 
     export default {
         data: () => ({
-            filters: ['add-ons', 'tags-items', 'commands', 'general']
+            filters: ['add-ons', 'commands', 'general']
         })
     };
 </script>

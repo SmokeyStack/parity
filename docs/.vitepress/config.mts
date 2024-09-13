@@ -7,6 +7,17 @@ export default defineConfig({
         'A site for features available in Java Edition but not in Bedrock Edition',
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
+        nav: [
+            {
+                text: 'More',
+                items: [
+                    {
+                        text: 'Vanilla Item Tags',
+                        link: '/vanilla-item-tags'
+                    }
+                ]
+            }
+        ],
 
         socialLinks: [
             { icon: 'github', link: 'https://github.com/SmokeyStack' },
