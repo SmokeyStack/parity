@@ -1,5 +1,23 @@
 [
     {
+        "category": "general",
+        "date": "2024-10-08T10:00:00",
+        "title": "<code>disablePlayerMovementCheck</code> gamerule",
+        "description": "since Java got the <code>disablePlayerMovementCheck</code> gamerule and Bedrock has not."
+    },
+    {
+        "category": "commands",
+        "date": "2024-10-02T11:00:00",
+        "title": "<code>/rotate</code>",
+        "description": "since Java got the <code>/rotate</code> command and Bedrock has not."
+    },
+    {
+        "category": "add-ons",
+        "date": "2024-09-18T10:01:00",
+        "title": "Recipe Type - <code>crafting_transmute</code>",
+        "description": "since Java got the <code>crafting_transmute</code> recipe type and Bedrock has not."
+    },
+    {
         "category": "add-ons",
         "date": "2024-09-11T11:21:00",
         "title": "Item Component - <code>minecraft:death_protection</code>",
@@ -46,6 +64,12 @@
         "date": "2024-08-15T11:00:00",
         "title": "Data Driven Goat Horn",
         "description": "since Java got data driven goat horn and Bedrock has not."
+    },
+    {
+        "category": "general",
+        "date": "2024-08-15T11:00:00",
+        "title": "Updated Redstone Torch Model",
+        "description": "since Java got an updated redstone torch model and Bedrock has not."
     },
     {
         "category": "general",
