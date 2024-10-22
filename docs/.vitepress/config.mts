@@ -32,6 +32,9 @@ export default defineConfig({
     vite: {
         ssr: {
             noExternal: ['vuetify']
+        },
+        build: {
+            sourcemap: true
         }
     },
     transformHead({ assets }) {
