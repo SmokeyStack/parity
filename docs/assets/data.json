@@ -73,6 +73,24 @@
     },
     {
         "category": "general",
+        "date": "2024-08-15T11:00:00",
+        "title": "Trial Chambers - <code>Encounters</code>",
+        "description": "since Java got the <code>Encounters</code> room type and Bedrock has not."
+    },
+    {
+        "category": "general",
+        "date": "2024-08-15T11:00:00",
+        "title": "Experimental Toggle - <code>Redstone Experiments</code>",
+        "description": "since Java got the <code>Redstone Experiments</code> experimental toggle and Bedrock has not."
+    },
+    {
+        "category": "general",
+        "date": "2024-08-15T11:00:00",
+        "title": "Experimental Toggle - <code>Minecart Improvements</code>",
+        "description": "since Java got the <code>Minecart Improvements</code> experimental and Bedrock has not."
+    },
+    {
+        "category": "general",
         "date": "2024-05-29T10:03:00",
         "title": "Entities With Passengers Can Use Portals",
         "description": "since Java got the ability for entities with passengers to use portals and Bedrock has not."
