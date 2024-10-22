@@ -32,6 +32,9 @@ export default defineConfig({
     vite: {
         ssr: {
             noExternal: ['vuetify']
+        },
+        build: {
+            chunkSizeWarningLimit: 1000
         }
     },
     transformHead({ assets }) {
