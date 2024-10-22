@@ -20,7 +20,7 @@
 
 <script>
     import moment from 'moment';
-    import * as countdown from 'countdown';
+    import countdown from '../libs/countdown';
 
     export default {
         data() {
@@ -56,15 +56,15 @@
         methods: {
             updateDiffs() {
                 //lets figure out our diffs
-                this.timeDifference = countdown.default(
+                this.timeDifference = countdown(
                     moment(new Date(this.date)).toDate(),
                     moment(new Date()).toDate(),
-                    countdown.default.YEARS |
-                        countdown.default.MONTHS |
-                        countdown.default.DAYS |
-                        countdown.default.HOURS |
-                        countdown.default.MINUTES |
-                        countdown.default.SECONDS
+                    countdown.YEARS |
+                        countdown.MONTHS |
+                        countdown.DAYS |
+                        countdown.HOURS |
+                        countdown.MINUTES |
+                        countdown.SECONDS
                 );
             }
         }
