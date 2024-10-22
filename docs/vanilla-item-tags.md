@@ -3,7 +3,7 @@ title: Features Missing From Java
 aside: false
 ---
 
-This page is to document how long since Java Edition got a vanilla item tag and Bedrock Edition is still waiting for. Select the buttons below to filter each parity category:
+This page is to document how long since Java Edition got a vanilla item tag and Bedrock Edition is still waiting for.
 
 <span v-for="i in data.length">
     <smokeystackDaysSinceTags :date="new Date(data[i-1].date)" :title="data[i-1].title" :description="data[i-1].description" />
