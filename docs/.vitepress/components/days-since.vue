@@ -59,12 +59,12 @@
                 this.timeDifference = countdown.default(
                     moment(new Date(this.date)).toDate(),
                     moment(new Date()).toDate(),
-                    countdown.YEARS |
-                        countdown.MONTHS |
-                        countdown.DAYS |
-                        countdown.HOURS |
-                        countdown.MINUTES |
-                        countdown.SECONDS
+                    countdown.default.YEARS |
+                        countdown.default.MONTHS |
+                        countdown.default.DAYS |
+                        countdown.default.HOURS |
+                        countdown.default.MINUTES |
+                        countdown.default.SECONDS
                 );
             }
         }
