@@ -3,6 +3,7 @@
     <h1 :style="{ color: textColor, fontFamily: 'Mojangles' }">
         {{ timeDifference }}
     </h1>
+    <span v-html="description"></span>
 </template>
 
 <script setup>
@@ -40,6 +41,9 @@
             },
             category: {
                 required: true
+            },
+            description: {
+                required: false
             }
         },
         mounted() {

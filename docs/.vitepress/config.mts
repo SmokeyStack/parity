@@ -16,6 +16,10 @@ export default defineConfig({
                         link: '/vanilla-item-tags'
                     },
                     {
+                        text: 'Vanilla Block Tags',
+                        link: '/vanilla-block-tags'
+                    },
+                    {
                         text: 'Implemented Features',
                         link: '/implemented-features'
                     }

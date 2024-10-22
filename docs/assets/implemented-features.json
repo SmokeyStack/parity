@@ -1,9 +1,71 @@
 [
     {
+        "category": "general",
+        "introduced": "2024-02-14",
+        "implemented": "2024-10-22T11:00:00",
+        "title": "Bogged now drops Poison Arrows when killed by Mobs tamed by a Player"
+    },
+    {
+        "category": "general",
+        "introduced": "2024-02-14",
+        "implemented": "2024-10-22T11:00:00",
+        "title": "Creepers now drop a Music Disc upon being killed by a Bogged"
+    },
+    {
         "category": "commands",
         "introduced": "2023-02-01",
         "implemented": "2024-10-22T11:00:00",
         "title": "<code>infinite</code> option in <code>/effect</code>"
+    },
+    {
+        "category": "general",
+        "introduced": "2021-01-20",
+        "implemented": "2024-10-22T11:00:00",
+        "title": "Dyeing Sheep and collars on Cats and Dogs now plays the dyeing sound"
+    },
+    {
+        "category": "general",
+        "introduced": "2020-03-25",
+        "implemented": "2024-10-22T11:00:00",
+        "title": "Identical Lodestone Compass items now stack up to 64"
+    },
+    {
+        "category": "general",
+        "introduced": "2019-08-22",
+        "implemented": "2024-10-22T11:00:00",
+        "title": "Beehive and Bee Nest can no longer be used as fuel in Furnaces"
+    },
+    {
+        "category": "general",
+        "introduced": "2019-01-30",
+        "implemented": "2024-10-22T11:00:00",
+        "title": "Mushroom Stems used on the Composter have had their fill chance adjusted from 85% to 65%"
+    },
+    {
+        "category": "general",
+        "introduced": "2018-10-24",
+        "implemented": "2024-10-22T11:00:00",
+        "title": "Placing Cocoa Beans now plays a sound"
+    },
+    {
+        "category": "general",
+        "introduced": "2014-06-09",
+        "implemented": "2024-10-22T11:00:00",
+        "title": "The all-sided pore mushroom block has been removed from the creative inventory"
+    },
+    {
+        "category": "general",
+        "introduced": "2015-09-10",
+        "implemented": "2024-10-22T11:00:00",
+        "title": "Regeneration Level for Enchanted Golden Apple",
+        "description": "Enchanted Golden Apple gives Regeneration II instead of Regeneration V."
+    },
+    {
+        "category": "commands",
+        "introduced": "2013-07-01",
+        "implemented": "2024-10-22T11:00:00",
+        "title": "<code>clear</code> option in <code>/effect</code>",
+        "description": "Clears a specific effect instead of all effects."
     },
     {
         "category": "general",

@@ -23,7 +23,7 @@ This page is to document how long it took for a Java Edition exclusive to come t
 
 <span v-for="i in data.length">
     <span v-if="filters.some((value) => [data[i-1].category].includes(value))">
-        <smokeystackDaysTook :introduced="new Date(data[i-1].introduced)" :implemented="new Date(data[i-1].implemented)" :title="data[i-1].title" :category="capitalizeFirstLetter(data[i-1].category)" />
+        <smokeystackDaysTook :introduced="new Date(data[i-1].introduced)" :implemented="new Date(data[i-1].implemented)" :title="data[i-1].title" :category="capitalizeFirstLetter(data[i-1].category)" :description="data[i-1].description || ''" />
     </span>
 </span>
 

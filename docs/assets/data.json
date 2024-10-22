@@ -186,6 +186,12 @@
         "description": "since Java got data driven vanilla block loot tables and Bedrock has not."
     },
     {
+        "category": "general",
+        "date": "2018-03-16",
+        "title": "Banner Map Markers",
+        "description": "since Java got banner map markers and Bedrock has not."
+    },
+    {
         "category": "add-ons",
         "date": "2017-12-06",
         "title": "Data Driven Vanilla Tags",
@@ -196,6 +202,12 @@
         "date": "2015-10-22",
         "title": "Subtitles",
         "description": "since Java got subtitles and Bedrock has not."
+    },
+    {
+        "category": "general",
+        "date": "2015-07-29",
+        "title": "Dual Wielding",
+        "description": "since Java got dual wielding and Bedrock has not. It is good to note that Bedrock can hold a select few items in the off-hand."
     },
     {
         "category": "add-ons",
