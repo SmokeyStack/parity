@@ -150,16 +150,16 @@
         "description": "since Java got the <code>/ride</code> command and disparity occurred. In Java, all types of entities can ride and be ridden by other entities of any types. In Bedrock, an entity cannot ride entities which are not normally rideable for it in vanilla game."
     },
     {
+        "category": "commands",
+        "date": "2022-05-04",
+        "title": "<code>feature</code> option in <code>/place</code>",
+        "description": "since Java got the <code>feature</code> option in <code>/place</code> command and Bedrock has not."
+    },
+    {
         "category": "add-ons",
         "date": "2022-03-16",
         "title": "Useable Jigsaw Blocks",
         "description": "since Java got useable Jigsaw blocks for creators and Bedrock has not."
-    },
-    {
-        "category": "commands",
-        "date": "2022-01-19",
-        "title": "<code>/placefeature</code>",
-        "description": "since Java got the <code>/placefeature</code> command and Bedrock has not. It is good to note that this command showed up in<code>1.18.20.25</code>but removed in<code>1.18.20.28</code>"
     },
     {
         "category": "add-ons",

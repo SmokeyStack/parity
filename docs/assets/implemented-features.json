@@ -18,6 +18,13 @@
         "title": "<code>infinite</code> option in <code>/effect</code>"
     },
     {
+        "category": "commands",
+        "introduced": "2022-05-04",
+        "implemented": "2024-10-30T12:00:00",
+        "title": "<code>/place</code>",
+        "description": "While we have this command, we are still missing the <code>feature</code> option."
+    },
+    {
         "category": "general",
         "introduced": "2021-01-20",
         "implemented": "2024-10-22T11:00:00",
