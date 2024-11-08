@@ -1,5 +1,25 @@
 [
     {
+        "date": "2024-11-06T10:02:00",
+        "title": "drowned_preferred_weapon",
+        "description": "Tags for specifying preferred weapons types for drowned when picking up items."
+    },
+    {
+        "date": "2024-11-06T10:02:00",
+        "title": "pillager_preferred_weapon",
+        "description": "Tags for specifying preferred weapons types for pillager when picking up items."
+    },
+    {
+        "date": "2024-11-06T10:02:00",
+        "title": "piglin_preferred_weapon",
+        "description": "Tags for specifying preferred weapons types for piglin when picking up items."
+    },
+    {
+        "date": "2024-11-06T10:02:00",
+        "title": "skeleton_preferred_weapon",
+        "description": "Tags for specifying preferred weapons types for skeleton when picking up items."
+    },
+    {
         "date": "2024-10-02T11:00:00",
         "title": "gaze_disguise_equipment",
         "description": "Items that can be equipped to disguise the player looking for other mobs."
@@ -631,19 +651,6 @@
         "date": "2019-10-16",
         "title": "lectern_books",
         "description": "Controls what items can be put on a lectern. Items cannot be added to this tag, only removed."
-    },
-    {
-        "date": "2019-08-22",
-        "title": "tall_flowers",
-        "description": "Used in the <code>flowers</code> item tag."
-    },
-    {
-        "date": "2019-08-22",
-        "title": "flowers",
-        "description": [
-            "Items in this tag can be used to breed bees.",
-            "Bees follow players holding items in this tag."
-        ]
     },
     {
         "date": "2019-02-27",
