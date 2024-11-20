@@ -26,6 +26,12 @@
     },
     {
         "category": "general",
+        "introduced": "2021-09-15",
+        "implemented": "2024-11-20T11:44:00",
+        "title": "Shears can used on Cave Vines, Kelp, Twisting Vines, and Weeping Vines to prevent further growth"
+    },
+    {
+        "category": "general",
         "introduced": "2021-01-20",
         "implemented": "2024-10-22T11:00:00",
         "title": "Dyeing Sheep and collars on Cats and Dogs now plays the dyeing sound"
@@ -79,5 +85,11 @@
         "introduced": "2011-09-29",
         "implemented": "2024-10-22T11:00:00",
         "title": "Hardcore Mode"
+    },
+    {
+        "category": "general",
+        "introduced": "2010-02-06",
+        "implemented": "2024-11-20T11:44:00",
+        "title": "Pause Menu Pauses the Game"
     }
 ]
