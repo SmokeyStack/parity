@@ -62,6 +62,12 @@
     },
     {
         "category": "general",
+        "introduced": "2016-06-10",
+        "implemented": "2024-12-04T11:46:00",
+        "title": "Short Grass now generates more frequently and in larger amounts."
+    },
+    {
+        "category": "general",
         "introduced": "2014-06-09",
         "implemented": "2024-10-22T11:00:00",
         "title": "The all-sided pore mushroom block has been removed from the creative inventory"
