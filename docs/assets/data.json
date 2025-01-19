@@ -1,5 +1,11 @@
 [
     {
+        "category": "commands",
+        "date": "2025-01-15T10:02:00",
+        "title": "<code>/test</code> gamerule",
+        "description": "since Java got the <code>/test</code> command and disparity occurred. On Bedrock, this command is called <code>/gametest</code>"
+    },
+    {
         "category": "general",
         "date": "2024-10-08T10:00:00",
         "title": "<code>disablePlayerMovementCheck</code> gamerule",
@@ -150,6 +156,18 @@
         "description": "since Java got the <code>/ride</code> command and disparity occurred. In Java, all types of entities can ride and be ridden by other entities of any types. In Bedrock, an entity cannot ride entities which are not normally rideable for it in vanilla game."
     },
     {
+        "category": "general",
+        "date": "2023-01-18",
+        "title": "Damage Tilt",
+        "description": "since Java got damage tilt and Bedrock has not."
+    },
+    {
+        "category": "general",
+        "date": "2022-07-06",
+        "title": "Spectator Mode",
+        "description": "since Java Spectator Mode disparity occurred. There are several features from Java not available in Bedrock. Please see: <a target='_blank' href='https://minecraft.wiki/w/Spectator'>https://minecraft.wiki/w/Spectator</a>"
+    },
+    {
         "category": "add-ons",
         "date": "2022-03-16",
         "title": "Useable Jigsaw Blocks",
@@ -166,6 +184,12 @@
         "date": "2020-06-03",
         "title": "Custom Dimensions",
         "description": "since Java got custom dimension support and Bedrock has not."
+    },
+    {
+        "category": "general",
+        "date": "2020-05-13",
+        "title": "Game Mode Switcher Shortcut",
+        "description": "since Java got a game mode switcher shortcut and Bedrock has not."
     },
     {
         "category": "general",
@@ -193,6 +217,12 @@
     },
     {
         "category": "general",
+        "date": "2016-09-20",
+        "title": "Entity Cramming",
+        "description": "since Java got entity cramming and Bedrock has not."
+    },
+    {
+        "category": "general",
         "date": "2015-10-22",
         "title": "Subtitles",
         "description": "since Java got subtitles and Bedrock has not."
@@ -208,5 +238,23 @@
         "date": "2014-02-06",
         "title": "Custom Vanilla Block Models",
         "description": "since Java got custom vanilla block models and Bedrock has not."
+    },
+    {
+        "category": "general",
+        "date": "2012-10-04",
+        "title": "Pressing the 1-9 hotkeys while hovering over an item puts that item into the corresponding hotbar slot",
+        "description": "since Java got this ability and Bedrock has not."
+    },
+    {
+        "category": "general",
+        "date": "2009-05-16",
+        "title": "Debug Screen",
+        "description": "since Java got the debug screen and Bedrock has not."
+    },
+    {
+        "category": "general",
+        "date": "",
+        "title": "Spawn Chunks",
+        "description": "since Java got spawn chunks and Bedrock has not."
     }
 ]

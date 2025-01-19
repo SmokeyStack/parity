@@ -55,6 +55,11 @@
         },
         methods: {
             updateDiffs() {
+                if (this.date == 'Invalid Date') {
+                    this.timeDifference =
+                        'UNKNOWN - This is due to it not being documented via the Minecraft Wiki';
+                    return;
+                }
                 //lets figure out our diffs
                 this.timeDifference = countdown(
                     moment(new Date(this.date)).toDate(),
