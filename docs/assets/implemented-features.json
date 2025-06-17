@@ -1,6 +1,12 @@
 [
     {
         "category": "general",
+        "introduced": "2025-01-29T11:00:00",
+        "implemented": "2025-06-17T11:55:00",
+        "title": "Beacon now renders from any loaded chunk in worlds versioned 1.21.90 and higher"
+    },
+    {
+        "category": "general",
         "introduced": "2024-02-14",
         "implemented": "2024-10-22T11:00:00",
         "title": "Bogged now drops Poison Arrows when killed by Mobs tamed by a Player"
@@ -10,6 +16,12 @@
         "introduced": "2024-02-14",
         "implemented": "2024-10-22T11:00:00",
         "title": "Creepers now drop a Music Disc upon being killed by a Bogged"
+    },
+    {
+        "category": "general",
+        "introduced": "2024-05-29T10:03:00",
+        "implemented": "2025-06-17T11:55:00",
+        "title": "Boats are now able to be pulled out of water using a Lead"
     },
     {
         "category": "commands",

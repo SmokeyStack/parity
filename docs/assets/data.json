@@ -1,11 +1,5 @@
 [
     {
-        "category": "general",
-        "date": "2025-01-29T11:00:00",
-        "title": "Beacon's Render Distance",
-        "description": "since Java got beacons and their beams now render beyond 16 chunks up to the client render distance and Bedrock has not."
-    },
-    {
         "category": "commands",
         "date": "2025-01-15T10:02:00",
         "title": "<code>/test</code> gamerule",
