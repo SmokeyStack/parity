@@ -10,10 +10,10 @@
     } from '@/components/ui/pagination';
     import { Input } from '@/components/ui/input';
     import { Badge } from '@/components/ui/badge';
-    import data from './assets/implemented-features.json';
+    import data from '../assets/implemented-features.json';
 
     import moment from 'moment';
-    import countdown from 'countdown';
+    import countdown from '../lib/countdown';
 
     const allIssues = ref(data);
     const searchQuery = ref('');

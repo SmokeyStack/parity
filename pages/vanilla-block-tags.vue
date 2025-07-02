@@ -9,10 +9,10 @@
         PaginationPrevious
     } from '@/components/ui/pagination';
     import { Input } from '@/components/ui/input';
-    import data from './assets/tags-blocks.json';
+    import data from '../assets/tags-blocks.json';
 
     import moment from 'moment';
-    import countdown from 'countdown';
+    import countdown from '../lib/countdown';
 
     const allIssues = ref(data);
     const searchQuery = ref('');
