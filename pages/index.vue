@@ -24,13 +24,26 @@
             return allIssues.value;
         }
         const lowerCaseQuery = searchQuery.value.toLowerCase();
-        return allIssues.value.filter(
-            (
-                issues: any // Use any if type not fully defined yet
-            ) =>
-                issues.title.toLowerCase().includes(lowerCaseQuery) ||
-                issues.description.toLowerCase().includes(lowerCaseQuery)
-        );
+        return allIssues.value.filter((issues: any) => {
+            // Check if title includes the query (existing logic)
+            if (issues.title.toLowerCase().includes(lowerCaseQuery)) {
+                return true;
+            }
+
+            // *** NEW LOGIC for description ***
+            if (typeof issues.description === 'string') {
+                // If it's a string, just check directly
+                return issues.description
+                    .toLowerCase()
+                    .includes(lowerCaseQuery);
+            } else if (Array.isArray(issues.description)) {
+                // If it's an array, use .some() to check if ANY element includes the query
+                return issues.description.some((desc: string) =>
+                    desc.toLowerCase().includes(lowerCaseQuery)
+                );
+            }
+            return false; // Return false if description is neither a string nor an array
+        });
     });
 
     const itemsPerPage = 10;
@@ -145,7 +158,14 @@
                 </template>
             </h1>
             <p class="leading-relaxed">
-                <span v-html="issue.description"></span>
+                <span
+                    v-html="issue.description"
+                    v-if="typeof issue.description == 'string'"></span>
+                <span
+                    v-if="typeof issue.description == 'object'"
+                    v-for="i in issue.description">
+                    <li v-html="i"></li>
+                </span>
             </p>
         </div>
         <p
