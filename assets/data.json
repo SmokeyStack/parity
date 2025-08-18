@@ -181,6 +181,18 @@
     },
     {
         "category": "add-ons",
+        "date": "2021-09-15",
+        "title": "Johnny Vindicator Won't Attack Baby Villagers",
+        "description": "since Java's Johnny Vindicators won't attack baby villagers. It is good to note that this is marked as Won't Fix for Bedrock."
+    },
+    {
+        "category": "add-ons",
+        "date": "2021-03-31",
+        "title": "Zombies Drop Baked Potato",
+        "description": "since Java's zombies drop baked potatoes instead of normal potatoes if on fire when killed or killed by a fire source and Bedrock does not."
+    },
+    {
+        "category": "add-ons",
         "date": "2020-09-21",
         "title": "Custom Biomes",
         "description": "since custom biome support was removed from Bedrock."
@@ -199,9 +211,21 @@
     },
     {
         "category": "general",
+        "date": "2020-04-02",
+        "title": "Zoglins Fling Entities Into the Air",
+        "description": "since Java's zoglins flings entities into the air and Bedrock does not."
+    },
+    {
+        "category": "general",
         "date": "2019-08-09",
         "title": "Instant Damage, Instant Health and Saturation Have Effect Icons",
         "description": "since Instant Damage, Instant Health and Saturation have effect icons on Java and Bedrock does not."
+    },
+    {
+        "category": "general",
+        "date": "2019-04-23",
+        "title": "Zombie Sieges",
+        "description": "since zombie sieges were removed from Bedrock."
     },
     {
         "category": "general",
@@ -228,6 +252,12 @@
         "description": "since Java got banner map markers and Bedrock has not."
     },
     {
+        "category": "general",
+        "date": "2018-02-09",
+        "title": "End Biomes",
+        "description": "since Java got End biomes and Bedrock has not."
+    },
+    {
         "category": "add-ons",
         "date": "2017-12-06",
         "title": "Data Driven Vanilla Tags",
@@ -235,9 +265,21 @@
     },
     {
         "category": "general",
+        "date": "2017-02-08",
+        "title": "Players Can Sleep Near Neutral Zombified Piglins",
+        "description": "since Java players can sleep near neutral zombified piglins and Bedrock cannot."
+    },
+    {
+        "category": "general",
         "date": "2016-12-15",
         "title": "Sweeping Edge",
         "description": "since Java got sweeping edge and Bedrock has not."
+    },
+    {
+        "category": "general",
+        "date": "2016-09-28",
+        "title": "Observer Detecting Changes to Noteblocks",
+        "description": "since Java's observers can detect changes to noteblocks and Bedrock does not."
     },
     {
         "category": "general",
@@ -250,6 +292,18 @@
         "date": "2015-10-22",
         "title": "Subtitles",
         "description": "since Java got subtitles and Bedrock has not."
+    },
+    {
+        "category": "general",
+        "date": "2015-10-21",
+        "title": "Zombie Villager in Igloos",
+        "description": "since zombie villager in igloos disparity occurred. In Java, the zombie villager is always a cleric. In Bedrock it spawns with a random profession."
+    },
+    {
+        "category": "general",
+        "date": "2015-10-21",
+        "title": "Igloos Window",
+        "description": "since igloos window disparity occurred. In Java, the window uses ice. In Bedrock it uses packed ice."
     },
     {
         "category": "general",
@@ -279,6 +333,12 @@
         "description": "since Java's fortune affecst sea lanterns and Bedrock does not."
     },
     {
+        "category": "general",
+        "date": "2014-04-24",
+        "title": "World Border",
+        "description": "since Java got world border and Bedrock has not."
+    },
+    {
         "category": "add-ons",
         "date": "2014-02-06",
         "title": "Custom Vanilla Block Models",
@@ -286,8 +346,26 @@
     },
     {
         "category": "general",
+        "date": "2014-02-06",
+        "title": "Zombified Piglins Can Break Down Doors",
+        "description": "since Java's zombified piglins can break down doors and Bedrock does not."
+    },
+    {
+        "category": "general",
+        "date": "2013-06-13",
+        "title": "Spiders Can Spawn with Status Effects on Hard Difficulty",
+        "description": "since Java's spiders can spawn with status effects on Hard difficulty and Bedrock does not."
+    },
+    {
+        "category": "general",
         "date": "2012-12-13",
         "title": "\"Christmas Chest\" Easter Egg",
+        "description": "since Java got this easter egg and Bedrock has not."
+    },
+    {
+        "category": "general",
+        "date": "2012-10-25",
+        "title": "Halloween Easter Egg",
         "description": "since Java got this easter egg and Bedrock has not."
     },
     {
@@ -313,6 +391,18 @@
         "date": "",
         "title": "Blindness Effect",
         "description": "since Java's blindness effect allows you to see the sun and moon during clear weather and Bedrock cannot."
+    },
+    {
+        "category": "general",
+        "date": "",
+        "title": "Zombified Piglins Forgiveness Timer",
+        "description": "since zombified piglins forgiveness timer disparity occurred. In Java, the forgiveness timer ranges from 20 to 55 seconds. In Bedrock it is always 25."
+    },
+    {
+        "category": "general",
+        "date": "",
+        "title": "Zombie Reinforcement",
+        "description": "since Java got zombie reinforcement and Bedrock has not."
     },
     {
         "category": "general",
