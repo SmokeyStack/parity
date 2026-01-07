@@ -365,6 +365,12 @@
     {
         "category": "general",
         "date": "2012-10-25",
+        "title": "Baby Mobs Are Spawn-able by Right-clicking a Mob With a Corresponding Mob Egg",
+        "description": "since Java got this ability and Bedrock has not."
+    },
+    {
+        "category": "general",
+        "date": "2012-10-25",
         "title": "Halloween Easter Egg",
         "description": "since Java got this easter egg and Bedrock has not."
     },
