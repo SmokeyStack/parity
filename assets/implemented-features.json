@@ -85,16 +85,16 @@
     },
     {
         "category": "general",
-        "introduced": "2014-06-09",
-        "implemented": "2024-10-22T11:00:00",
-        "title": "The all-sided pore mushroom block has been removed from the creative inventory"
-    },
-    {
-        "category": "general",
         "introduced": "2015-09-10",
         "implemented": "2024-10-22T11:00:00",
         "title": "Regeneration Level for Enchanted Golden Apple",
         "description": "Enchanted Golden Apple gives Regeneration II instead of Regeneration V."
+    },
+    {
+        "category": "general",
+        "introduced": "2014-06-09",
+        "implemented": "2024-10-22T11:00:00",
+        "title": "The all-sided pore mushroom block has been removed from the creative inventory"
     },
     {
         "category": "commands",
@@ -108,6 +108,13 @@
         "introduced": "2011-09-29",
         "implemented": "2024-10-22T11:00:00",
         "title": "Hardcore Mode"
+    },
+    {
+        "category": "general",
+        "introduced": "2012-10-04",
+        "implemented": "2025-10-28T11:40:00",
+        "title": "Pressing the 1-9 hotkeys while hovering over an item puts that item into the corresponding hotbar slot",
+        "description": "since Java got this ability and Bedrock has not."
     },
     {
         "category": "general",
