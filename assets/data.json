@@ -223,6 +223,12 @@
     },
     {
         "category": "general",
+        "date": "2019-06-03",
+        "title": "Villager Scare Mechanic",
+        "description": "since Java's panicking villagers have a higher chance of spawning iron golems and Bedrock does not."
+    },
+    {
+        "category": "general",
         "date": "2019-04-23",
         "title": "Zombie Sieges",
         "description": "since zombie sieges were removed from Bedrock."
