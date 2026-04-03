@@ -43,9 +43,21 @@
     },
     {
         "category": "general",
+        "introduced": "2023-01-18",
+        "implemented": "2025-12-09T12:30:00",
+        "title": "Damage Tilt"
+    },
+    {
+        "category": "general",
         "introduced": "2021-09-15",
         "implemented": "2024-11-20T11:44:00",
         "title": "Shears can used on Cave Vines, Kelp, Twisting Vines, and Weeping Vines to prevent further growth"
+    },
+    {
+        "category": "general",
+        "introduced": "2022-03-16",
+        "implemented": "2025-08-28T11:40:00",
+        "title": "Useable Jigsaw Blocks"
     },
     {
         "category": "general",
@@ -58,6 +70,12 @@
         "introduced": "2020-03-25",
         "implemented": "2024-10-22T11:00:00",
         "title": "Identical Lodestone Compass items now stack up to 64"
+    },
+    {
+        "category": "add-ons",
+        "introduced": "2020-09-21",
+        "implemented": "2025-09-30T11:23:00",
+        "title": "Custom Biomes"
     },
     {
         "category": "general",
@@ -115,6 +133,12 @@
         "implemented": "2025-10-28T11:40:00",
         "title": "Pressing the 1-9 hotkeys while hovering over an item puts that item into the corresponding hotbar slot",
         "description": "since Java got this ability and Bedrock has not."
+    },
+    {
+        "category": "general",
+        "introduced": "2012-10-25",
+        "implemented": "2026-02-10T11:54:00",
+        "title": "Baby Mobs Are Spawn-able by Right-clicking a Mob With a Corresponding Mob Egg"
     },
     {
         "category": "general",

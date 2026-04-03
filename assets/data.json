@@ -163,21 +163,9 @@
     },
     {
         "category": "general",
-        "date": "2023-01-18",
-        "title": "Damage Tilt",
-        "description": "since Java got damage tilt and Bedrock has not."
-    },
-    {
-        "category": "general",
         "date": "2022-07-06",
         "title": "Spectator Mode",
         "description": "since Java Spectator Mode disparity occurred. There are several features from Java not available in Bedrock. Please see: <a target='_blank' href='https://minecraft.wiki/w/Spectator'>https://minecraft.wiki/w/Spectator</a>"
-    },
-    {
-        "category": "add-ons",
-        "date": "2022-03-16",
-        "title": "Useable Jigsaw Blocks",
-        "description": "since Java got useable Jigsaw blocks for creators and Bedrock has not."
     },
     {
         "category": "add-ons",
@@ -190,12 +178,6 @@
         "date": "2021-03-31",
         "title": "Zombies Drop Baked Potato",
         "description": "since Java's zombies drop baked potatoes instead of normal potatoes if on fire when killed or killed by a fire source and Bedrock does not."
-    },
-    {
-        "category": "add-ons",
-        "date": "2020-09-21",
-        "title": "Custom Biomes",
-        "description": "since custom biome support was removed from Bedrock."
     },
     {
         "category": "add-ons",
@@ -368,12 +350,7 @@
         "title": "\"Christmas Chest\" Easter Egg",
         "description": "since Java got this easter egg and Bedrock has not."
     },
-    {
-        "category": "general",
-        "date": "2012-10-25",
-        "title": "Baby Mobs Are Spawn-able by Right-clicking a Mob With a Corresponding Mob Egg",
-        "description": "since Java got this ability and Bedrock has not."
-    },
+    
     {
         "category": "general",
         "date": "2012-10-25",
