@@ -350,7 +350,6 @@
         "title": "\"Christmas Chest\" Easter Egg",
         "description": "since Java got this easter egg and Bedrock has not."
     },
-    
     {
         "category": "general",
         "date": "2012-10-25",
@@ -386,11 +385,5 @@
         "date": "",
         "title": "Zombie Reinforcement",
         "description": "since Java got zombie reinforcement and Bedrock has not."
-    },
-    {
-        "category": "general",
-        "date": "",
-        "title": "Spawn Chunks",
-        "description": "since Java got spawn chunks and Bedrock has not."
     }
 ]
