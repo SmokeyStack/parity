@@ -115,6 +115,12 @@
         "title": "The all-sided pore mushroom block has been removed from the creative inventory"
     },
     {
+        "category": "general",
+        "introduced": "2015-10-22",
+        "implemented": "2026-05-05T11:50:00",
+        "title": "Subtitles"
+    },
+    {
         "category": "commands",
         "introduced": "2013-07-01",
         "implemented": "2024-10-22T11:00:00",
