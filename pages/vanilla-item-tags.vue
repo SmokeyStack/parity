@@ -9,10 +9,14 @@
         PaginationPrevious
     } from '@/components/ui/pagination';
     import { Input } from '@/components/ui/input';
+    import { ClipboardCopy, Check } from 'lucide-vue-next';
     import data from '../assets/tags-items.json';
 
     import moment from 'moment';
     import countdown from '../lib/countdown';
+
+    const cellRefs = ref<Record<string, HTMLElement>>({});
+    const { copyAsImage, copiedKey } = useCopyAsImage();
 
     const allIssues = ref(data);
     const searchQuery = ref('');
@@ -125,7 +129,15 @@
         <div
             v-for="issue in displayedIssues"
             :key="issue.title + issue.date"
-            class="border rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out">
+            :ref="(el) => { if (el) cellRefs[issue.title + issue.date] = el as HTMLElement }"
+            class="relative border rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out">
+            <button
+                @click="copyAsImage(cellRefs[issue.title + issue.date], issue.title + issue.date)"
+                class="absolute top-3 right-3 p-1.5 rounded-lg opacity-50 hover:opacity-100 transition-opacity duration-200 cursor-pointer"
+                :title="copiedKey === issue.title + issue.date ? 'Copied!' : 'Copy as image'">
+                <Check v-if="copiedKey === issue.title + issue.date" class="w-4 h-4 text-green-500" />
+                <ClipboardCopy v-else class="w-4 h-4" />
+            </button>
             <div class="flex flex-col sm:flex-row sm:items-center mb-2">
                 <h2 class="text-xl sm:text-2xl font-bold mr-3 mb-2 sm:mb-0">
                     <code>
