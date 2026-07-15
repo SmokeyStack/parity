@@ -140,9 +140,9 @@
                 <ClipboardCopy v-else class="w-4 h-4" />
             </button>
             <div class="flex flex-col sm:flex-row sm:items-center mb-2">
-                <h2
-                    class="text-xl sm:text-2xl font-bold mr-3 mb-2 sm:mb-0"
-                    v-html="issue.title"></h2>
+                <h2 class="text-xl sm:text-2xl font-bold mr-3 mb-2 sm:mb-0">
+                    <CodeText :text="issue.title" />
+                </h2>
                 <span class="px-2 py-0.5 font-semibold">
                     <Badge>
                         {{
@@ -169,16 +169,18 @@
                     Minecraft Wiki
                 </template>
             </h1>
-            <p class="leading-relaxed">
-                <span
-                    v-html="issue.description"
-                    v-if="typeof issue.description == 'string'"></span>
-                <span
-                    v-if="typeof issue.description == 'object'"
-                    v-for="i in issue.description">
-                    <li v-html="i"></li>
-                </span>
+            <p
+                v-if="typeof issue.description == 'string'"
+                class="leading-relaxed">
+                <CodeText :text="issue.description" />
             </p>
+            <ul
+                v-else-if="Array.isArray(issue.description)"
+                class="leading-relaxed list-disc list-inside">
+                <li v-for="i in issue.description" :key="i">
+                    <CodeText :text="i" />
+                </li>
+            </ul>
         </div>
         <p
             v-if="displayedIssues.length === 0 && !searchQuery"

@@ -128,9 +128,9 @@
                 <ClipboardCopy v-else class="w-4 h-4" />
             </button>
             <div class="flex flex-col sm:flex-row sm:items-center mb-2">
-                <h2
-                    class="text-xl sm:text-2xl font-bold mr-3 mb-2 sm:mb-0"
-                    v-html="issue.title"></h2>
+                <h2 class="text-xl sm:text-2xl font-bold mr-3 mb-2 sm:mb-0">
+                    <CodeText :text="issue.title" />
+                </h2>
                 <span class="px-2 py-0.5 font-semibold">
                     <Badge>
                         {{

@@ -102,5 +102,18 @@
             </div>
         </div>
         <NuxtPage />
+        <footer
+            class="mt-16 pt-6 border-t text-center text-xs text-muted-foreground space-y-1">
+            <p class="font-semibold">
+                NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED
+                WITH MOJANG OR MICROSOFT.
+            </p>
+            <p>
+                Parity is an unofficial, non-commercial fan project. Minecraft
+                is a trademark of Mojang AB / Microsoft Corporation. All game
+                content, names, and assets referenced by this site belong to
+                their respective owners.
+            </p>
+        </footer>
     </div>
 </template>

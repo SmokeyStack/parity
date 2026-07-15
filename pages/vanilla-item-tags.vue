@@ -156,16 +156,18 @@
                     Minecraft Wiki
                 </template>
             </h1>
-            <p class="leading-relaxed">
-                <span
-                    v-html="issue.description"
-                    v-if="typeof issue.description == 'string'"></span>
-                <span
-                    v-if="typeof issue.description == 'object'"
-                    v-for="i in issue.description">
-                    <li v-html="i"></li>
-                </span>
+            <p
+                v-if="typeof issue.description == 'string'"
+                class="leading-relaxed">
+                <CodeText :text="issue.description" />
             </p>
+            <ul
+                v-else-if="Array.isArray(issue.description)"
+                class="leading-relaxed list-disc list-inside">
+                <li v-for="i in issue.description" :key="i">
+                    <CodeText :text="i" />
+                </li>
+            </ul>
         </div>
         <p
             v-if="displayedIssues.length === 0 && !searchQuery"
