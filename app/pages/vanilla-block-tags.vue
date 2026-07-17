@@ -9,7 +9,7 @@
         PaginationPrevious
     } from '@/components/ui/pagination';
     import { Input } from '@/components/ui/input';
-    import { ClipboardCopy, Check } from 'lucide-vue-next';
+    import { ClipboardCopy, Check } from '@lucide/vue';
     import data from '../assets/tags-blocks.json';
 
     import moment from 'moment';

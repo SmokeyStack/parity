@@ -10,7 +10,7 @@
     } from '@/components/ui/pagination';
     import { Input } from '@/components/ui/input';
     import { Badge } from '@/components/ui/badge';
-    import { ClipboardCopy, Check } from 'lucide-vue-next';
+    import { ClipboardCopy, Check } from '@lucide/vue';
     import data from '../assets/implemented-features.json';
 
     import moment from 'moment';

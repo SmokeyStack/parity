@@ -46,7 +46,7 @@ by that project.
 
 ## Lucide icons
 
-**Rendered via:** `lucide-vue-next` (npm dependency)
+**Rendered via:** `@lucide/vue` (npm dependency)
 **License:** ISC — https://lucide.dev
 
 ## Minecraft names and game data
