@@ -379,5 +379,17 @@
         "date": "",
         "title": "Zombified Piglins Forgiveness Timer",
         "description": "since zombified piglins forgiveness timer disparity occurred. In Java, the forgiveness timer ranges from 20 to 55 seconds. In Bedrock it is always 25."
+    },
+    {
+        "category": "general",
+        "date": "2015-07-29",
+        "title": "Spectral Arrows",
+        "description": "since Java got spectral arrows and badrock did not."
+    },
+    {
+        "category": "general",
+        "date": "2011-07-08",
+        "title": "Sticky Pistons drop blocks",
+        "description": "since Java got the ability for sticky pistons to drop blocks when powered with a short pulse and pull when powered with a long pulse."
     }
 ]
