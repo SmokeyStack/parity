@@ -1,0 +1,6 @@
+date: "2018-10-24"
+title: small_flowers
+description:
+  - Used in the suspicious stew recipe. Adding items does not allow them to be used in suspicious stew, but removing them disallows them from being used.
+  - Items in this tag that give suspicious stew an effect can be fed to brown mooshrooms.
+  - Used in the <code>flowers</code> item tag.

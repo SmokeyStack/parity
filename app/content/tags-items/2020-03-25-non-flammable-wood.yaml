@@ -1,0 +1,5 @@
+date: "2020-03-25"
+title: non_flammable_wood
+description:
+  - Items in this tag cannot be used as fuel in a furnace.
+  - If items are removed from this tag, they can be used as fuel only if they are part of a tag that can be used as fuel.

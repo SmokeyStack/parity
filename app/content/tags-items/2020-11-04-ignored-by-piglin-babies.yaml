@@ -1,0 +1,5 @@
+date: "2020-11-04"
+title: ignored_by_piglin_babies
+description:
+  - Baby piglins do not attempt to pick up items in this tag. Baby piglins still follow the other rules adult piglins follow.
+  - Takes precedence over <code>piglin_food</code>, and <code>piglin_loved</code> item tags when an item is in both.

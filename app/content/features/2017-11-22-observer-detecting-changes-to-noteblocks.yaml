@@ -1,0 +1,4 @@
+category: general
+date: "2017-11-22"
+title: Observer Detecting Changes to Noteblocks
+description: since Java's observers can detect changes to noteblocks and Bedrock does not.

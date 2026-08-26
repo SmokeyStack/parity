@@ -77,109 +77,110 @@ For bugs or feature ideas, open an [issue](https://github.com/SmokeyStack/parity
 
 ## Adding parity data
 
-Most contributions are a single new entry in one of the JSON files under `assets/`:
+Content lives as **one YAML file per entry** under `app/content/`, split into four collections:
 
-- `assets/data.json` - Home page (features still missing from Bedrock)
-- `assets/implemented-features.json` - Implemented features (`introduced` / `implemented` timestamp pair)
-- `assets/tags-items.json` - Missing item tags
-- `assets/tags-blocks.json` - Missing block tags
+- `app/content/features/` - Home page (features still missing from Bedrock)
+- `app/content/implemented/` - Implemented features (`introduced` / `implemented` timestamp pair)
+- `app/content/tags-items/` - Missing item tags
+- `app/content/tags-blocks/` - Missing block tags
+
+Adding an entry means adding a single new file - there's no shared array to merge into, no manual re-sorting, and no risk of an unrelated merge conflict with someone else's entry. Files are loaded and sorted by date automatically at build time (see `app/composables/useContent.ts`).
 
 ### Checklist
 
 1. Find the Java introduction date from a reliable source.
-2. Add a new entry to the appropriate JSON file under `assets/`.
+2. Add one new YAML file to the appropriate directory under `app/content/` (see [Data format](#data-format) below for the filename convention and fields).
 3. Use an existing `category` value where applicable.
 4. Limit markup in `title` and `description` to `<code>` tags only.
 5. Include your source link in the PR description.
-6. Run the site locally and confirm the card renders correctly.
+6. Run `npm run validate` and confirm it passes.
+7. Run the site locally and confirm the card renders correctly.
 
 ### Guidelines
 
-- `date` / `introduced` should represent when the feature first became available in a Java snapshot, pre-release, or release candidate build in ISO format (`YYYY-MM-DDTHH:MM:SS`).
+- `date` / `introduced` / `implemented` should represent when the feature first became available in a Java snapshot, pre-release, or release candidate build, in ISO format (`YYYY-MM-DDTHH:MM:SS`, or `YYYY-MM-DD` if no more precise time is known).
 - Source dates from the [Minecraft Wiki](https://minecraft.wiki), official changelogs, or [SlicedLime](https://x.com/slicedlime) or [Jay Wells](https://x.com/Mega_Spud) as they tweet about new changelogs.
 - Please link your source in the PR description.
-- `category` is one of the existing kebab-case categories (`general`, `commands`, `add-ons`, etc.).
+- `category` is one of the existing kebab-case categories (`general`, `commands`, `add-ons`, etc.). Tag files (`tags-items`, `tags-blocks`) don't use a `category` field.
 - Markup in `title` / `description` is limited to `<code>` tags - no other HTML.
 - `description` may be a string or an array of strings (rendered as a list).
 
 ### Before submitting
 
-- keep entries sorted by date
+- run `npm run validate` - CI runs this same check on every pull request
 - preserve existing category names
 - use ISO timestamps without timezone suffixes
 - run the project locally to confirm the card renders correctly
 
 ## Data format
 
-### `assets/data.json`
+Every collection is a directory of YAML files under `app/content/`, one file per entry, named `YYYY-MM-DD-<slug-of-title>.yaml` (the date prefix matches the entry's `date`/`introduced` field; the slug is the title lowercased with `<code>` tags and punctuation stripped). `npm run validate` (Zod-based, see `scripts/validate-content.mjs`) enforces the schemas below and runs in CI on every pull request and on push to `main`.
+
+### `app/content/features/*.yaml`
 
 Tracks features still missing from Bedrock.
 
 | Field | Type | Required | Notes |
 | --- | --- | --- | --- |
 | `category` | string | Yes | Must match an existing kebab-case category |
-| `date` | string | Yes | ISO timestamp in `YYYY-MM-DDTHH:MM:SS` format |
+| `date` | string | Yes | ISO timestamp (`YYYY-MM-DDTHH:MM:SS` or `YYYY-MM-DD`), or `""` if the introduction date isn't documented |
 | `title` | string | Yes | Supports `<code>` tags only |
 | `description` | string or string[] | Yes | Rendered as text or a list |
 
-Example:
+Example (`app/content/features/2025-01-15-test-command.yaml`):
 
-```json
-{
-  "category": "commands",
-  "date": "2025-01-15T10:02:00",
-  "title": "<code>/test</code> command",
-  "description": "since Java got the <code>/test</code> command and disparity occurred."
-}
+```yaml
+category: commands
+date: "2025-01-15T10:02:00"
+title: <code>/test</code> command
+description: since Java got the <code>/test</code> command and disparity occurred.
 ```
 
-### `assets/implemented-features.json`
+### `app/content/implemented/*.yaml`
 
 Tracks features that later reached Bedrock, using an `introduced` / `implemented` timestamp pair.
 
 | Field | Type | Required | Notes |
 | --- | --- | --- | --- |
 | `category` | string | Yes | Must match an existing kebab-case category |
-| `introduced` | string | Yes | When the feature landed in Java (`YYYY-MM-DDTHH:MM:SS`) |
-| `implemented` | string | Yes | When the feature landed in Bedrock (`YYYY-MM-DDTHH:MM:SS`) |
+| `introduced` | string | Yes | When the feature landed in Java (`YYYY-MM-DDTHH:MM:SS` or `YYYY-MM-DD`) |
+| `implemented` | string | Yes | When the feature landed in Bedrock (`YYYY-MM-DDTHH:MM:SS` or `YYYY-MM-DD`); must not be before `introduced` |
 | `title` | string | Yes | Supports `<code>` tags only |
-| `description` | string or string[] | Yes | Rendered as text or a list |
+| `description` | string or string[] | No | Not currently rendered on this page, but preserved where present in the source data |
 
-Example:
+Example (`app/content/implemented/2024-01-10-example-command.yaml`):
 
-```json
-{
-  "category": "commands",
-  "introduced": "2024-01-10T12:00:00",
-  "implemented": "2025-03-25T16:00:00",
-  "title": "<code>/example</code> command",
-  "description": "Time from Java introduction to Bedrock implementation."
-}
+```yaml
+category: commands
+introduced: "2024-01-10T12:00:00"
+implemented: "2025-03-25T16:00:00"
+title: <code>/example</code> command
 ```
 
-### `assets/tags-items.json` and `assets/tags-blocks.json`
+### `app/content/tags-items/*.yaml` and `app/content/tags-blocks/*.yaml`
 
 Track Java item/block tags that are not yet available to Bedrock add-ons.
 
 | Field | Type | Required | Notes |
 | --- | --- | --- | --- |
-| `name` | string | Yes | Tag name, e.g. `minecraft:logs` |
-| `description` | string or string[] | Optional | Additional context if useful |
+| `date` | string | Yes | ISO timestamp (`YYYY-MM-DDTHH:MM:SS` or `YYYY-MM-DD`) the tag was added in Java |
+| `title` | string | Yes | Tag name, e.g. `minecraft:logs` (**not** `name` - despite older docs, the field the site reads is `title`) |
+| `description` | string or string[] | Yes | Additional context |
 
-Example:
+Example (`app/content/tags-items/2018-05-08-minecraft-logs.yaml`):
 
-```json
-{
-  "name": "minecraft:logs",
-  "description": "Available in Java but not currently exposed to Bedrock add-ons."
-}
+```yaml
+date: "2018-05-08"
+title: minecraft:logs
+description: Available in Java but not currently exposed to Bedrock add-ons.
 ```
 
 ## Development notes
 
-- Content is sourced from JSON files in `assets/`
+- Content is sourced from one-file-per-entry YAML under `app/content/`, loaded via `app/composables/useContent.ts`
+- `npm run validate` runs the Zod schema checks in `scripts/validate-content.mjs`; this also runs in CI (`.github/workflows/validate.yml`)
 - The site is statically generated with Nuxt
-- Each route renders cards from one of the data sources above
+- Each route renders cards from one of the content collections above
 - Card PNG export is available from each card via the clipboard icon
 
 ## Scope

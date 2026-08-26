@@ -1,4 +1,5 @@
 import tailwindcss from '@tailwindcss/vite';
+import yaml from '@rollup/plugin-yaml';
 
 export default defineNuxtConfig({
     compatibilityDate: '2025-07-15',
@@ -13,6 +14,6 @@ export default defineNuxtConfig({
         componentDir: '@/components/ui'
     },
     vite: {
-        plugins: [tailwindcss()]
+        plugins: [tailwindcss(), yaml()]
     }
 });

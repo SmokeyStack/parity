@@ -1,0 +1,5 @@
+date: "2020-11-04"
+title: piglin_food
+description:
+  - Piglins can "eat" items in this tag.
+  - Eating refers to the piglin seeking out and picking up an item without appearing in its inventory, thus vanishing.

@@ -11,7 +11,6 @@
     import { Input } from '@/components/ui/input';
     import { Badge } from '@/components/ui/badge';
     import { ClipboardCopy, Check } from '@lucide/vue';
-    import data from '../assets/data.json';
 
     import moment from 'moment';
     import countdown from '../lib/countdown';
@@ -19,7 +18,7 @@
     const cellRefs = ref<Record<string, HTMLElement>>({});
     const { copyAsImage, copiedKey } = useCopyAsImage();
 
-    const allIssues = ref(data);
+    const allIssues = ref(useContent('features', 'date'));
     const searchQuery = ref('');
 
     // --- Filtered Articles (based on search) ---
@@ -71,7 +70,7 @@
     const updateDiffs = (article: any) => {
         if (!article.date || article.date === 'Invalid Date') {
             issueTimeDiffs.value.set(
-                article.title + article.date,
+                article.id,
                 'UNKNOWN - This is due to it not being documented via the Minecraft Wiki'
             );
             return;
@@ -89,7 +88,7 @@
                 countdown.MINUTES |
                 countdown.SECONDS
         );
-        issueTimeDiffs.value.set(article.title + article.date, diff.toString());
+        issueTimeDiffs.value.set(article.id, diff.toString());
     };
     const updateAllDisplayedIssuesDiffs = () => {
         displayedIssues.value.forEach((article) => {
@@ -129,29 +128,19 @@
     <div class="space-y-6 mb-12">
         <div
             v-for="issue in displayedIssues"
-            :key="issue.title + issue.date"
+            :key="issue.id"
             :ref="
                 (el) => {
-                    if (el)
-                        cellRefs[issue.title + issue.date] = el as HTMLElement;
+                    if (el) cellRefs[issue.id] = el as HTMLElement;
                 }
             "
             class="relative border rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out">
             <button
-                @click="
-                    copyAsImage(
-                        cellRefs[issue.title + issue.date],
-                        issue.title + issue.date
-                    )
-                "
+                @click="copyAsImage(cellRefs[issue.id], issue.id)"
                 class="absolute top-3 right-3 p-1.5 rounded-lg opacity-50 hover:opacity-100 transition-opacity duration-200 cursor-pointer"
-                :title="
-                    copiedKey === issue.title + issue.date
-                        ? 'Copied!'
-                        : 'Copy as image'
-                ">
+                :title="copiedKey === issue.id ? 'Copied!' : 'Copy as image'">
                 <Check
-                    v-if="copiedKey === issue.title + issue.date"
+                    v-if="copiedKey === issue.id"
                     class="w-4 h-4 text-green-500" />
                 <ClipboardCopy v-else class="w-4 h-4" />
             </button>
@@ -176,8 +165,8 @@
             </div>
             <h1
                 class="counter-colour text-3xl md:text-4xl font-[Mojangles] my-4 tracking-wide text-center sm:text-left">
-                <template v-if="issueTimeDiffs.get(issue.title + issue.date)">
-                    {{ issueTimeDiffs.get(issue.title + issue.date) }}
+                <template v-if="issueTimeDiffs.get(issue.id)">
+                    {{ issueTimeDiffs.get(issue.id) }}
                 </template>
                 <template v-else-if="issue.date"> Calculating... </template>
                 <template v-else>

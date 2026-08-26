@@ -1,0 +1,6 @@
+date: "2022-03-31"
+title: wool_carpets
+description:
+  - Used to check whether or not an item can go in the decoration slot of a llama, but items other than carpets do not change the llama visually.
+  - Used to check if an item can go in the fuel slot of a furnace and to return a burn time of 67.
+  - Used in the <code>dampens_vibrations</code> item tag.

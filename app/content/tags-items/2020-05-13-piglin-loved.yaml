@@ -1,0 +1,6 @@
+date: "2020-05-13"
+title: piglin_loved
+description:
+  - Piglins actively seek out items in this tag.
+  - Piglins view players holding items in this tag as holding a "loved" item.
+  - Used in the <code>distract_piglin.json</code> advancement file.

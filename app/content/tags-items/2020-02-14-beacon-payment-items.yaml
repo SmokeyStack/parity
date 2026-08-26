@@ -1,0 +1,3 @@
+date: "2020-02-14"
+title: beacon_payment_items
+description: Used by beacons to check which items can be placed inside of its GUI to select an effect.

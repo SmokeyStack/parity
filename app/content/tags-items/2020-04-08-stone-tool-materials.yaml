@@ -1,0 +1,5 @@
+date: "2020-04-08"
+title: stone_tool_materials
+description:
+  - Used in the <code>mine_stone.json</code>, <code>stone_axe.json</code>, <code>stone_hoe.json</code>, <code>stone_pickaxe.json</code>, <code>stone_shovel.json</code> and <code>stone_sword.json</code> advancement and recipe files.
+  - Items in this tag can be used to repair stone tools in an anvil.

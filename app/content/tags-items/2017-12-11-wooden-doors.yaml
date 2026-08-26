@@ -1,0 +1,5 @@
+date: "2017-12-11"
+title: wooden_doors
+description:
+  - Used to check if an item can go in the fuel slot of a furnace and to return a burn time of 200.
+  - Used in the <code>doors</code> item tag.

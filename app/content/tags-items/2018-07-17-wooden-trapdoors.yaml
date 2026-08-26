@@ -1,0 +1,5 @@
+date: "2018-07-17"
+title: wooden_trapdoors
+description:
+  - Used to check if an item can go in the fuel slot of a furnace and to return a burn time of 300.
+  - Used in the <code>trapdoors</code> item tag.
