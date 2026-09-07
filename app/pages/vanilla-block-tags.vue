@@ -134,15 +134,21 @@
                 }
             "
             class="relative border rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out">
-            <button
-                @click="copyAsImage(cellRefs[issue.id], issue.id)"
-                class="absolute top-3 right-3 p-1.5 rounded-lg opacity-50 hover:opacity-100 transition-opacity duration-200 cursor-pointer"
-                :title="copiedKey === issue.id ? 'Copied!' : 'Copy as image'">
-                <Check
-                    v-if="copiedKey === issue.id"
-                    class="w-4 h-4 text-green-500" />
-                <ClipboardCopy v-else class="w-4 h-4" />
-            </button>
+            <div class="absolute top-3 right-3 flex items-center gap-2">
+                <SourceNote :source="issue.source" />
+                <button
+                    data-no-export
+                    @click="copyAsImage(cellRefs[issue.id], issue.id)"
+                    class="p-1.5 rounded-lg opacity-50 hover:opacity-100 transition-opacity duration-200 cursor-pointer"
+                    :title="
+                        copiedKey === issue.id ? 'Copied!' : 'Copy as image'
+                    ">
+                    <Check
+                        v-if="copiedKey === issue.id"
+                        class="w-4 h-4 text-green-500" />
+                    <ClipboardCopy v-else class="w-4 h-4" />
+                </button>
+            </div>
             <div class="flex flex-col sm:flex-row sm:items-center mb-2">
                 <h2 class="text-xl sm:text-2xl font-bold mr-3 mb-2 sm:mb-0">
                     <code>

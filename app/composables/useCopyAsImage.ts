@@ -7,19 +7,22 @@ export function useCopyAsImage() {
     async function copyAsImage(element: HTMLElement, key: string) {
         try {
             const blob = await toBlob(element, {
-                backgroundColor:
-                    document.documentElement.classList.contains('dark')
-                        ? '#1b1b1f'
-                        : '#ffffff',
+                filter: (node) =>
+                    !(
+                        node instanceof HTMLElement &&
+                        node.hasAttribute('data-no-export')
+                    ),
+                backgroundColor: document.documentElement.classList.contains(
+                    'dark'
+                )
+                    ? '#1b1b1f'
+                    : '#ffffff'
             });
             if (!blob) return;
 
-            if (
-                navigator.clipboard &&
-                typeof ClipboardItem !== 'undefined'
-            ) {
+            if (navigator.clipboard && typeof ClipboardItem !== 'undefined') {
                 await navigator.clipboard.write([
-                    new ClipboardItem({ 'image/png': blob }),
+                    new ClipboardItem({ 'image/png': blob })
                 ]);
             } else {
                 // Fallback: download the image

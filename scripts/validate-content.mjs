@@ -39,11 +39,16 @@ const isoDateString = (label) =>
     z.string().refine(isIsoDate, {
         message: `${label} must be YYYY-MM-DDTHH:MM:SS or YYYY-MM-DD`
     });
+const sourceUrl = z.url({ protocol: /^https?$/ });
+const sourceOptional = z
+    .union([sourceUrl, z.array(sourceUrl).min(1)])
+    .optional();
 const featureSchema = z.object({
     category: z.enum(CATEGORIES),
     date: featureDate,
     title: titleString,
-    description: descriptionRequired
+    description: descriptionRequired,
+    source: sourceOptional
 });
 const implementedSchema = z
     .object({
@@ -51,7 +56,8 @@ const implementedSchema = z
         introduced: isoDateString('introduced'),
         implemented: isoDateString('implemented'),
         title: titleString,
-        description: descriptionOptional
+        description: descriptionOptional,
+        source: sourceOptional
     })
     .refine(
         (entry) => new Date(entry.implemented) >= new Date(entry.introduced),
@@ -63,7 +69,8 @@ const implementedSchema = z
 const tagSchema = z.object({
     date: isoDateString('date'),
     title: titleString,
-    description: descriptionRequired
+    description: descriptionRequired,
+    source: sourceOptional
 });
 const COLLECTIONS = [
     { dir: 'features', schema: featureSchema },

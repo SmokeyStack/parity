@@ -92,7 +92,7 @@ Adding an entry means adding a single new file - there's no shared array to merg
 2. Add one new YAML file to the appropriate directory under `app/content/` (see [Data format](#data-format) below for the filename convention and fields).
 3. Use an existing `category` value where applicable.
 4. Limit markup in `title` and `description` to `<code>` tags only.
-5. Include your source link in the PR description.
+5. Add your source link to the entry's `source` field.
 6. Run `npm run validate` and confirm it passes.
 7. Run the site locally and confirm the card renders correctly.
 
@@ -100,7 +100,7 @@ Adding an entry means adding a single new file - there's no shared array to merg
 
 - `date` / `introduced` / `implemented` should represent when the feature first became available in a Java snapshot, pre-release, or release candidate build, in ISO format (`YYYY-MM-DDTHH:MM:SS`, or `YYYY-MM-DD` if no more precise time is known).
 - Source dates from the [Minecraft Wiki](https://minecraft.wiki), official changelogs, or [SlicedLime](https://x.com/slicedlime) or [Jay Wells](https://x.com/Mega_Spud) as they tweet about new changelogs.
-- Please link your source in the PR description.
+- Put the source link in the entry's `source` field (a single URL or a list). It's shown as a small "via X (@handle)" / "via minecraft.net" note beside the copy button so readers can see where the date came from; the note is left out of the copied PNG.
 - `category` is one of the existing kebab-case categories (`general`, `commands`, `add-ons`, etc.). Tag files (`tags-items`, `tags-blocks`) don't use a `category` field.
 - Markup in `title` / `description` is limited to `<code>` tags - no other HTML.
 - `description` may be a string or an array of strings (rendered as a list).
@@ -126,6 +126,7 @@ Tracks features still missing from Bedrock.
 | `date` | string | Yes | ISO timestamp (`YYYY-MM-DDTHH:MM:SS` or `YYYY-MM-DD`), or `""` if the introduction date isn't documented |
 | `title` | string | Yes | Supports `<code>` tags only |
 | `description` | string or string[] | Yes | Rendered as text or a list |
+| `source` | string or string[] | No | URL(s) the date was taken from (tweet, minecraft.net article, wiki page, ...). Rendered as a small "via ..." link beside the copy button; excluded from the PNG export |
 
 Example (`app/content/features/2025-01-15-test-command.yaml`):
 
@@ -134,6 +135,7 @@ category: commands
 date: "2025-01-15T10:02:00"
 title: <code>/test</code> command
 description: since Java got the <code>/test</code> command and disparity occurred.
+source: https://www.minecraft.net/en-us/article/minecraft-snapshot-25w03a
 ```
 
 ### `app/content/implemented/*.yaml`
@@ -147,6 +149,7 @@ Tracks features that later reached Bedrock, using an `introduced` / `implemented
 | `implemented` | string | Yes | When the feature landed in Bedrock (`YYYY-MM-DDTHH:MM:SS` or `YYYY-MM-DD`); must not be before `introduced` |
 | `title` | string | Yes | Supports `<code>` tags only |
 | `description` | string or string[] | No | Not currently rendered on this page, but preserved where present in the source data |
+| `source` | string or string[] | No | URL(s) the date was taken from (tweet, minecraft.net article, wiki page, ...). Rendered as a small "via ..." link beside the copy button; excluded from the PNG export |
 
 Example (`app/content/implemented/2024-01-10-example-command.yaml`):
 
@@ -166,6 +169,7 @@ Track Java item/block tags that are not yet available to Bedrock add-ons.
 | `date` | string | Yes | ISO timestamp (`YYYY-MM-DDTHH:MM:SS` or `YYYY-MM-DD`) the tag was added in Java |
 | `title` | string | Yes | Tag name, e.g. `minecraft:logs` (**not** `name` - despite older docs, the field the site reads is `title`) |
 | `description` | string or string[] | Yes | Additional context |
+| `source` | string or string[] | No | URL(s) the date was taken from (tweet, minecraft.net article, wiki page, ...). Rendered as a small "via ..." link beside the copy button; excluded from the PNG export |
 
 Example (`app/content/tags-items/2018-05-08-minecraft-logs.yaml`):
 
