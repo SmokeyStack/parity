@@ -1,3 +1,4 @@
 date: "2020-11-25"
 title: freeze_immune_wearables
 description: Entities with an item in this tag in any armor slot do not freeze.
+source: https://minecraft.wiki/w/Java_Edition_20w48a

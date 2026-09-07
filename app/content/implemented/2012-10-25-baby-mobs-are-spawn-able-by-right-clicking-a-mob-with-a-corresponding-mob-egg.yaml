@@ -2,3 +2,6 @@ category: general
 introduced: "2012-10-25"
 implemented: "2026-02-10T11:54:00"
 title: Baby Mobs Are Spawn-able by Right-clicking a Mob With a Corresponding Mob Egg
+source:
+  - https://minecraft.wiki/w/Java_Edition_1.4.4
+  - https://feedback.minecraft.net/hc/en-us/articles/43274629736717-Minecraft-Bedrock-Edition-26-0-Changelog

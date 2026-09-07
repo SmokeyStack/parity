@@ -3,3 +3,6 @@ introduced: "2015-09-10"
 implemented: "2024-10-22T11:00:00"
 title: Regeneration Level for Enchanted Golden Apple
 description: Enchanted Golden Apple gives Regeneration II instead of Regeneration V.
+source:
+  - https://minecraft.wiki/w/Java_Edition_15w37a
+  - https://feedback.minecraft.net/hc/en-us/articles/31222183227149-Minecraft-Bedrock-Edition-1-21-40-Bundles-of-Bravery

@@ -4,3 +4,4 @@ description:
   - Controls what items can be shot by bows and crossbows.
   - Any items added to the tag can be shot and picked up as a normal arrow.
   - It is good to note that the Bedrock has the <code>arrow</code> tag but it only contains the <code>minecraft:arrow</code> item.
+source: https://minecraft.wiki/w/Java_Edition_19w09a

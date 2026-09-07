@@ -4,3 +4,4 @@ description:
   - Used by dolphins to pick a player to swim to. The item can be both in the main and offhand.
   - Feeding a dolphin one of these items increases its 'trust' in the player.
   - Items in this tag add 1 to the fish_caught statistic when caught through fishing.
+source: https://minecraft.wiki/w/Item_tag_(Java_Edition)

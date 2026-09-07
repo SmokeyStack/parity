@@ -2,3 +2,6 @@ category: general
 introduced: "2024-02-14"
 implemented: "2024-10-22T11:00:00"
 title: Creepers now drop a Music Disc upon being killed by a Bogged
+source:
+  - https://www.minecraft.net/en-us/article/minecraft-snapshot-24w07a
+  - https://feedback.minecraft.net/hc/en-us/articles/31222183227149-Minecraft-Bedrock-Edition-1-21-40-Bundles-of-Bravery

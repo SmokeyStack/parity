@@ -2,3 +2,4 @@ category: commands
 date: "2023-01-18"
 title: <code>/ride</code>
 description: since Java got the <code>/ride</code> command and disparity occurred. In Java, all types of entities can ride and be ridden by other entities of any types. In Bedrock, an entity cannot ride entities which are not normally rideable for it in vanilla game.
+source: https://www.minecraft.net/en-us/article/minecraft-snapshot-23w03a

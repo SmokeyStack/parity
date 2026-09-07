@@ -3,3 +3,6 @@ introduced: "2013-07-01"
 implemented: "2024-10-22T11:00:00"
 title: <code>clear</code> option in <code>/effect</code>
 description: Clears a specific effect instead of all effects.
+source:
+  - https://minecraft.wiki/w/Java_Edition_1.6.1
+  - https://feedback.minecraft.net/hc/en-us/articles/31222183227149-Minecraft-Bedrock-Edition-1-21-40-Bundles-of-Bravery

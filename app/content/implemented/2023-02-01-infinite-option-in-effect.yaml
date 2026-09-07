@@ -2,3 +2,6 @@ category: commands
 introduced: "2023-02-01"
 implemented: "2024-10-22T11:00:00"
 title: <code>infinite</code> option in <code>/effect</code>
+source:
+  - https://www.minecraft.net/en-us/article/minecraft-snapshot-23w05a
+  - https://feedback.minecraft.net/hc/en-us/articles/31222183227149-Minecraft-Bedrock-Edition-1-21-40-Bundles-of-Bravery

@@ -2,3 +2,6 @@ category: general
 introduced: "2010-02-06"
 implemented: "2024-11-20T11:44:00"
 title: Pause Menu Pauses the Game
+source:
+  - https://minecraft.wiki/w/Java_Edition_Indev_0.31_20100206-1437
+  - https://feedback.minecraft.net/hc/en-us/articles/31998389834637-Minecraft-Beta-Preview-1-21-60-21

@@ -3,3 +3,6 @@ introduced: "2012-10-04"
 implemented: "2025-10-28T11:40:00"
 title: Pressing the 1-9 hotkeys while hovering over an item puts that item into the corresponding hotbar slot
 description: since Java got this ability and Bedrock has not.
+source:
+  - https://minecraft.wiki/w/Java_Edition_12w40a
+  - https://feedback.minecraft.net/hc/en-us/articles/40566672351885-Minecraft-1-21-120-Bedrock

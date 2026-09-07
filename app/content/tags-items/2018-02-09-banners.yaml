@@ -3,3 +3,4 @@ title: banners
 description:
   - Used to check if an item can go in the fuel slot of a furnace and to return a burn time of 300.
   - It is good to note that the Bedrock has the <code>banner</code> tag but it only contains the <code>minecraft:banner</code> item.
+source: https://minecraft.wiki/w/Java_Edition_18w06a

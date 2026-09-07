@@ -2,3 +2,6 @@ category: commands
 introduced: "2022-05-04"
 implemented: "2024-12-04T11:46:00"
 title: <code>feature</code> option in <code>/place</code>
+source:
+  - https://www.minecraft.net/en-us/article/minecraft-snapshot-22w18a
+  - https://feedback.minecraft.net/hc/en-us/articles/32412964700813-Minecraft-Beta-Preview-1-21-60-23

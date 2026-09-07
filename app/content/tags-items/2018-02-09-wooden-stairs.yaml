@@ -3,3 +3,4 @@ title: wooden_stairs
 description:
   - Used to check if an item can go in the fuel slot of a furnace and to return a burn time of 300.
   - Used in the <code>stairs</code> item tag.
+source: https://minecraft.wiki/w/Java_Edition_18w06a
